@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mkdocs:
+    container_name: catznip-docs
+    build: .
+    #command: new .
+    restart: always
+    ports:
+      - "2020:8000"
+    volumes:
+      - ./catznip:/docs

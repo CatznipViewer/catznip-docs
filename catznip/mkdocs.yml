@@ -1,0 +1,36 @@
+site_name: Catznip Viewer Documentation
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: #282828
+  font:
+    text: Open Sans
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+  logo: assets/Logo-NoText.png
+  favicon: assets/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
+
+# Plugins
+plugins:
+  - awesome-pages:              # See https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+  - autolink_references:        # See https://github.com/theskumar/autolink-references-mkdocs-plugin
+      autolinks:
+        - reference_prefix: CATZ-
+          target_url: https://catznip.atlassian.net/browse/CATZ-<num>
+        - reference_prefix: CRASH-
+          target_url: https://catznip.atlassian.net/browse/CRASH-<num>
+  - search:                     # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
+
+# Navigation layout
+nav:
+  - Home: index.md
+  - ... | glob=faq/*.md
+  - ... | glob=release_notes/*.md
