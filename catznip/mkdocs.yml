@@ -15,11 +15,16 @@ theme:
   logo: assets/Logo-NoText.png
   favicon: assets/favicon.ico
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  
 extra_css:
   - stylesheets/extra.css
 
 # Plugins
 plugins:
+  - include-markdown:           # See https://github.com/mondeja/mkdocs-include-markdown-plugin
   - awesome-pages:              # See https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
   - autolink_references:        # See https://github.com/theskumar/autolink-references-mkdocs-plugin
       autolinks:
