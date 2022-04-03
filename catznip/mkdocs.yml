@@ -32,6 +32,10 @@ plugins:
           target_url: https://catznip.atlassian.net/browse/CATZ-<num>
         - reference_prefix: CRASH-
           target_url: https://catznip.atlassian.net/browse/CRASH-<num>
+        - reference_prefix: BUG-
+          target_url: https://jira.secondlife.com/browse/BUG-<num>
+        - reference_prefix: STORM-
+          target_url: https://jira.secondlife.com/browse/STORM-<num>
   - search:                     # See https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
 
 # Navigation layout
