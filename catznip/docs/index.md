@@ -10,7 +10,7 @@ Catznip is the development viewer for RLVa written by Kitty Barnett. This is an 
 
 RLVa goes from Catznip into many other viewers making it especially useful for script developers as it represents the future of RLVa often months ahead of the mainstream.
 
-## Entirely home Grown
+## Entirely Home Grown
 
 Unless explicitly stated, Catznip does not borrow code from other TPV projects, it is, simply put, an original work built upon the code released by Linden Lab. We will always explicitly give credit for external code where it is due, for the rest, the Catznip Team did it.
 
