@@ -42,6 +42,7 @@ plugins:
 # Navigation layout
 nav:
   - Home: index.md
+  - ... | glob=features/*.md
   - ... | glob=how_to/*.md
   - ... | glob=troubleshooting/*.md
   - ... | glob=release_notes/*.md
