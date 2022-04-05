@@ -2,7 +2,8 @@
 
 SharedWear represents one of the most obvious end user differences between RLVa and RLV and is enabled by default in all current RLVa Viewers.
 
-**Note : Viewer 1 TPVs (Phoenix & Singularity) have SharedWear disabled by default. If wish to enable or have problems and wish to revert the original RLVa behavior, check or uncheck the top menu RLVa > Debug > Enable Shared Wear.**
+!!! note "Viewer 1 TPVs (Phoenix & Singularity) have SharedWear disabled by default."
+    If wish to enable or have problems and wish to revert the original RLVa behavior, check or uncheck the top menu RLVa > Debug > Enable Shared Wear.
 
 ## What is SharedWear?
 

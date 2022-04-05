@@ -1,5 +1,7 @@
 # Mini Map Parcels
 
+!!! info "This feature has been picked up by most third party viewers."
+
 ![Mini Map Parcels ><](./mini_map/floater_mini_map.png)
 
 ## Context menu options

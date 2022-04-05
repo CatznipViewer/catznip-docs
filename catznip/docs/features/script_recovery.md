@@ -1,5 +1,7 @@
 # Script Recovery
 
+!!! info "This feature has been picked up by most third party viewers."
+
 ![Script Recovery Floater >](./script_recovery/script_recovery.png)
 
 Ever crash while editing a script?
@@ -10,4 +12,3 @@ Pick the scripts you wish to save and press Recover. Pressing Cancel removes any
 
 Recovered scripts are placed in your inventory Lost & Found folder.
 
-This feature has been picked up by several TPV's.
