@@ -12,7 +12,7 @@ Right click on any on in world object, from the context menu, manage...
 
 Select an object from the 'Derendered' tab of the 'Avatar / Object Blacklist' floater and press the trash can icon marked Restore to immediately reload this object and return it to view.
 
-You can access the Object / Avavtar Blacklist floater from the top menu > communicate > Blocked.  
+You can access the Object / Avatar Blacklist floater from the top menu > communicate > Blocked.  
 
 Notes
 You can not derender an avatar or avatar attachment, see the Block List.
