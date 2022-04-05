@@ -1,6 +1,6 @@
 # Script Recovery
 
-![Catznip_R4 >](./script_recovery/script_recovery.png)
+![Script Recovery Floater >](./script_recovery/script_recovery.png)
 
 Ever crash while editing a script?
 
