@@ -11,4 +11,3 @@ All open scripts are auto saved to your computer while you work on them so if yo
 Pick the scripts you wish to save and press Recover. Pressing Cancel removes any saved scripts from your computer and closes the dialog.
 
 Recovered scripts are placed in your inventory Lost & Found folder.
-

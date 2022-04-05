@@ -6,7 +6,7 @@
 
 ## Context menu options
 
-* Zoom > : Select from 3 preset zoom ranges. Scroll mousewheel to zoom manually.
+* Zoom > : Select from 3 preset zoom ranges. Scroll mouse-wheel to zoom manually.
 * Show >
   * Objects : Show block outlines for objects overladed on the mini map.
   * Property Lines : Show outlines for parcel boundaries.

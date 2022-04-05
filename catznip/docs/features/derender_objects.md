@@ -19,4 +19,4 @@ You can not derender an avatar or avatar attachment, see the Block List.
 
 Derendering an object that has an avatar sitting on it will cause both the object and avatar to vanish. The avatar will reappear the moment they stand up.
 
-Derending an object will not block it at the same time, to do this, block the object and then derender it.
+Derendering an object will not block it at the same time, to do this, block the object and then derender it.

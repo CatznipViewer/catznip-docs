@@ -21,4 +21,4 @@ Right click on any on in world object, from the context menu, manage File:MenuMa
 * Block (mute) : Blocks all chat and message output from this specific object. Will be listed on the 'Blocked' tab.
 * \+ Block Object on the Avatar / Object Blacklist floater and entering a name. This will block output from ALL objects with the same name.
 
-!!! note "Derending an object will not block it at the same time, to do this, block the object and then derender it (see [Object Blacklist](object_blacklist.md))."
+!!! note "Derendering an object will not block it at the same time, to do this, block the object and then derender it (see [Object Blacklist](object_blacklist.md))."
