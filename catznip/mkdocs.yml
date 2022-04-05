@@ -44,4 +44,4 @@ nav:
   - ... | glob=how_to/*.md
   - ... | glob=troubleshooting/*.md
   - ... | glob=release_notes/*.md
-  - contact/index.md
+  - ... | glob=contact/*.md

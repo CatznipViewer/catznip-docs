@@ -1,5 +1,3 @@
 # Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mattis mi. Maecenas sed euismod lectus, sit amet sagittis leo. Nunc ut lorem varius, imperdiet massa venenatis, aliquam dolor. Etiam ac faucibus eros, sed auctor nunc. Duis et iaculis felis. Mauris porttitor, arcu vitae pulvinar imperdiet, leo orci lobortis metus, ac vulputate ex metus et neque. Phasellus a feugiat odio. Sed id ultricies risus. Nunc tincidunt at lacus congue accumsan. Aenean a dignissim felis, ac consequat arcu. Quisque semper volutpat augue eget feugiat. Vestibulum placerat porta diam, in mollis ipsum egestas et. Nulla sed nisi lorem.
-
-Aenean vehicula egestas mattis. Proin lacinia velit arcu, egestas pretium sem rhoncus eu. Morbi placerat sed lorem a tristique. Sed ac eros lectus. Vivamus porta erat libero, vitae porttitor sapien dictum vel. Integer et tincidunt ipsum. Quisque sagittis lacus vulputate metus porttitor, ac lacinia sem blandit. Aenean facilisis ante quam, ut elementum massa molestie condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean rhoncus dapibus justo ut viverra. Pellentesque vitae nibh et tellus convallis scelerisque quis ut risus. Suspendisse fringilla nisl in mauris pharetra fringilla. Ut sed mauris nisl.
+We very much like to hear your thoughts, comments, bug reports and general feedback on the viewer.
