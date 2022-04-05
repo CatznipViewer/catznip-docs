@@ -18,6 +18,7 @@ theme:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - mdx_truly_sane_lists
   
 extra_css:
   - stylesheets/extra.css
