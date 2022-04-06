@@ -4,9 +4,9 @@ services:
   mkdocs:
     container_name: catznip-docs
     build: .
-    #command: new .
+    command: serve -f ./catznip/mkdocs.yml --dev-addr=0.0.0.0:8000
     restart: always
     ports:
       - "2020:8000"
     volumes:
-      - ./catznip:/docs
+      - ./catznip:/docs/catznip
