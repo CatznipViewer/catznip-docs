@@ -6,6 +6,7 @@
 A submitted crash report is retained only for as long as is needed: once it has been looked over there is no further need for it and it will be permanently deleted. General information about a crash log may be shared with Linden Lab (i.e. in the form of a P-JIRA if for instance notice that a significant number of people are all experiencing the same crash but can’t fix it), the crash report itself will be treated as strictly personal and will not be shared.
 
 ## Required Information
+
 This is the bare minimum information we need to identify and diagnose your crash. If we can't tell what was going on, we can't possibly hope to fix it.
 
 Non personally identifying information such as which operating system you're using, video card and amount of memory.

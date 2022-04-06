@@ -14,7 +14,7 @@ Texture preview 'Save as' button is now a fly out and remembers the last used fo
 
 Chiclets are the small row of icons at the top / bottom right of your screen that show instant message and group chat sessions, object menus and inventory offers, etc.
 
-Catznip allows you to rearrange your IM tabs by dragging them, this now now affects the chicklet order as well. 
+Catznip allows you to rearrange your IM tabs by dragging them, this now now affects the chicklet order as well.
 
 ![Rearrange Chiclets ><](./usability_enhancements/conv_rearrange3.png)
 

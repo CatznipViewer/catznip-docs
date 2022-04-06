@@ -1,4 +1,4 @@
-#Clean Install The Viewer
+# Clean Install The Viewer
 
 !!! warning "Do NOT attempt to follow these instructions while the viewer is running!"
 
