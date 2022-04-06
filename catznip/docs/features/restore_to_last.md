@@ -20,3 +20,5 @@ Notes for Region Owners
 Restore to last position is region independent by design. An object rezzed at a specific location on one region can be restored to that position on a different one.
 
 You can restrict the use of Restore to Last Position by creating a tile of land in the corner of the region and using group rights to limit those who can build.
+
+--8<-- "includes/abbreviations.md"

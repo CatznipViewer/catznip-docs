@@ -18,3 +18,5 @@ Optional additional information you can choose to submit, this is more in realm 
 * The last 16kb of your Second Life log file (not your chat logs).
 
 !!! note "See our [Privacy policy](../contact/privacy_policy.md) for more information."
+
+--8<-- "includes/abbreviations.md"

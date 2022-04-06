@@ -16,3 +16,5 @@ Historically, the #RLV Folder has suffered a technical limitation. The viewer si
 SharedWear is an RLVa feature that corrects the original problem. You simply no longer need attachment point named folders cluttering up your #RLV folder or item names. Any existing attachment point references will still be honored so nothing breaks.
 
 RLVa doesn’t automatically make attachment point folders as they are no longer required.
+
+--8<-- "includes/abbreviations.md"

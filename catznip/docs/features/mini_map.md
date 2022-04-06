@@ -24,3 +24,5 @@ Hovering the mouse over a parcel on the Mini Map or World Map and clicking the i
 Right clicking on avatar markers on the Mini Map provides the option to open their profile in the context menu. Tightly clustered markers will give the option to select which avatar's profile is desired.
 
 This feature has been picked up by several TPV's.
+
+--8<-- "includes/abbreviations.md"

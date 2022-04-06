@@ -21,3 +21,5 @@ To install a dictionary for a language that doesn't ship with the viewer by defa
     ... in the unzipped folder, or if you're trying to import a dictionary from elsewhere, you'll need to manually select the .dic file to import: for most dictionaries it will start with an abbreviation of the language (i.e. fr for French, de for German, nl for Dutch, ...).
 
     If you see multiple .dic files, try to import the simplest name first (i.e. a filename that does not contain things like "hyph" or "thes").
+
+--8<-- "includes/abbreviations.md"

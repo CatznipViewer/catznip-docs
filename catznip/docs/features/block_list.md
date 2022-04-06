@@ -22,3 +22,5 @@ Right click on any on in world object, from the context menu, manage File:MenuMa
 * \+ Block Object on the Avatar / Object Blacklist floater and entering a name. This will block output from ALL objects with the same name.
 
 !!! note "Derendering an object will not block it at the same time, to do this, block the object and then derender it (see [Object Blacklist](object_blacklist.md))."
+
+--8<-- "includes/abbreviations.md"

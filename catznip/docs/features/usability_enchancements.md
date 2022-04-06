@@ -39,3 +39,5 @@ Right clicking on a worn attachment provides the option to detach that item and 
 Right clicking on any object or avatar attachment and selecting Texture Refresh from the context menu causes all textures and sculpt maps for the target object to be dropped and re-fetched. This can help should textures or sculpts fail to load completely.
 
 ![Menu Texture Refresh ><](./usability_enhancements/menu_texture_refresh.png)
+
+--8<-- "includes/abbreviations.md"

@@ -18,4 +18,6 @@ We go to great lengths to ensure the published Catznip source code is readable, 
 
 ---
 
-Second Life™ and Linden Lab™ are trademarks or registered trademarks of Linden Research, Inc. No infringement is intended.
+Second Life™ and Linden Lab™ are trademarks or registered trademarks of Linden Research, Inc. No infringement is intended. 
+
+--8<-- "includes/abbreviations.md"

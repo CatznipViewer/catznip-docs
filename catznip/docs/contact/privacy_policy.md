@@ -45,3 +45,5 @@ The scope of this information will change from version to version depending on w
 This privacy policy might change from time to time: any significant changes will be explained specifically (a significant change would be a change in intent, or a change in what is collected or how it is used, etc) even if it’s only to point out that it is has changed.
 
 We are deeply committed to protecting your privacy in Second Life, even in your interactions with us.
+
+--8<-- "includes/abbreviations.md"

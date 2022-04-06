@@ -10,7 +10,7 @@
 
 ## With special thanks (in no particular order)
 
-Satomi Ahn, Trip Hastings, Honey Puddles, Hitomi Tiponi, Razeldine Wirefly, Be Holder, Loom Kish, Trix Braveheart, Ebon (ebonaku.dragovar), MissStrawberryWhine, Lilly Noodle, Whirly Fizzle, Arrehn Oberlander, Esmara Draconia, Qetesh (vala.vella), Chloe Constantine, Lexia Metaller, CrystalPurity Resident, Batche Manen, Lone Dubratt, Israel Schnute, Cinder Roxley, Faith Noonan, Liss (lissomeprey), Tristizia Demonista, Penny Patton, Aya Mactavish, Sean Brady, Inhandra Birdsong, Innula Zenovka, Camille Serpentine, Vanilla Meili, Voo Oompa
+Satomi Ahn, Trip Hastings, Honey Puddles, Hitomi Tiponi, Razeldine Wirefly, Be Holder, Loom Kish, Trix Braveheart, Ebon (ebonaku.dragovar), MissStrawberryWhine, Lilly Noodle, Whirly Fizzle, Arrehn Oberlander, Esmara Draconia, Qetesh (vala.vella), Chloe Constantine, Lexia Metaller, CrystalPurity, Batche Manen, Lone Dubratt, Israel Schnute, Cinder Roxley, Faith Noonan, Liss (lissomeprey), Tristizia Demonista, Penny Patton, Aya Mactavish, Sean Brady, Inhandra Birdsong, Innula Zenovka, Camille Serpentine, Vanilla Meili, Voo Oompa
 
 ## Open source contributions
 
@@ -21,3 +21,5 @@ Satomi Ahn, Trip Hastings, Honey Puddles, Hitomi Tiponi, Razeldine Wirefly, Be H
 ## Linden Lab™
 
 Catznip would not be possible without the hard work and continued ongoing commitment to open source viewer development by Linden Lab™, these guys rock.
+
+--8<-- "includes/abbreviations.md"
