@@ -51,6 +51,6 @@ nav:
   - Home: index.md
   - ... | glob=features/*.md
   - ... | glob=how_to/*.md
-  - ... | glob=troubleshooting/*.md
+  - ... | glob=rlva/*.md
   - ... | glob=release_notes/*.md
   - ... | glob=contact/*.md
