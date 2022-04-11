@@ -3,6 +3,7 @@
 Limit touching to within the specified radius from the users centre. if set more than once, the lowest distance is in effect.
 
 !!! info "@fartouch[:&lt;distance&gt;]=&lt;n|y&gt;"
+
     * **[:&lt;distance&gt;]** - Optional parameter that allows a distance to specified, if omitted default is 1.5m
 
 The user will be unable to touch, move or edit objects beyond the distance.
