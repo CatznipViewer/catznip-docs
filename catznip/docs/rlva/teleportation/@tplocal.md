@@ -2,7 +2,7 @@
 
 Prevents local teleports either through double-click teleports or by typing the coordinates into the address bar or the world map.
 
-!!! info "@tplocal[:&lt;distance&gt;]=&lt;n|y&gt;"
+!!! tip "@tplocal[:&lt;distance&gt;]=&lt;n|y&gt;"
 
     * **[:&lt;distance&gt;]** - Optionally specify the max distance for a permitted local teleport.
 

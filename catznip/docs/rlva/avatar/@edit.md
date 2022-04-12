@@ -1,6 +1,6 @@
 ## @edit
 
-!!! info "@edit=&lt;n|y&gt;"
+!!! tip "@edit=&lt;n|y&gt;"
 
 Prevent editing objects rezzed in world and attached to the user
 
