@@ -1,4 +1,4 @@
-## @tpto
+# @tpto
 
 Teleports the user to a specific location in either global coordinates OR region coordinates.
 

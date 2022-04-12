@@ -4,7 +4,7 @@
 
 {%
    include-markdown "avatar/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -24,7 +24,7 @@
 
 {%
    include-markdown "clothing_attachment/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -32,7 +32,7 @@
 
 {%
    include-markdown "instantmessage/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -40,7 +40,7 @@
 
 {%
    include-markdown "location/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -48,7 +48,7 @@
 
 {%
    include-markdown "localchat/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -56,7 +56,7 @@
 
 {%
    include-markdown "sitting/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}
 
@@ -64,6 +64,6 @@
 
 {%
    include-markdown "teleportation/*.md"
-   heading-offset=1
+   heading-offset=2
    exclude="index.md"
 %}

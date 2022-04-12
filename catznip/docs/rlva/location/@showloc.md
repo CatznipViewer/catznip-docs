@@ -1,4 +1,4 @@
-## @showloc
+# @showloc
 
 Primarily used to hides the current parcel and region location information from the user, typically replacing it with "(Hidden parcel), (Hidden region)".
 

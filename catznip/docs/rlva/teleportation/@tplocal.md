@@ -1,4 +1,4 @@
-## @tplocal
+# @tplocal
 
 Prevents local teleports either through double-click teleports or by typing the coordinates into the address bar or the world map.
 

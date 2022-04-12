@@ -1,4 +1,4 @@
-## @fartouch
+# @fartouch
 
 Limit touching to within the specified radius from the users centre. if set more than once, the lowest distance is in effect.
 
@@ -14,6 +14,6 @@ The user will be unable to touch, move or edit objects beyond the distance.
 
 !!! warning "The distance is not an exception"
 
-    Don't use **@fartouch=n** followed by **@fartouch:20=n** since that will set the fartouch distance to the default 1.5m instead of the intended 20m
+    Using **@fartouch=n** followed by **@fartouch:20=n** will set the fartouch distance to the default 1.5m instead of the intended 20m
 
 ---

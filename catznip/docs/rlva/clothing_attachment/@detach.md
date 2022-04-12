@@ -1,4 +1,4 @@
-## @detach
+# @detach
 
 Prevents an attachment from being detached (which attachment depends on how it's called) and removes specific attachments (depending on how its called!) See the examples below..
 

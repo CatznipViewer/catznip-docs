@@ -1,4 +1,4 @@
-## @sendgesture
+# @sendgesture
 
 Prevents the user from playing gestures.
 

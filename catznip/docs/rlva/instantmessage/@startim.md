@@ -1,4 +1,4 @@
-## @startim
+# @startim
 
 Prevents starting / opening a new IM conversation with another user.
 

@@ -1,4 +1,4 @@
-## @adjustheight
+# @adjustheight
 
 Sets vertical offset raising or lowering the avatar with roughly a -200 to 200 range.
 

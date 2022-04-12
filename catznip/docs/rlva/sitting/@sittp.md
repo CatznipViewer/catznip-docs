@@ -1,4 +1,4 @@
-## @sittp
+# @sittp
 
 Limit sitting on objects to within the specified radius from the users centre. if set more than once, the lowest distance is in effect.
 
