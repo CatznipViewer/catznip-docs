@@ -1,4 +1,4 @@
-*[ALM ]: Advanced Lighting Model
+*[ALM]: Advanced Lighting Model
 *[API]: Application Programming Interface
 *[BOM]: Bakes on Mesh
 *[BoM]: Bakes on Mesh
