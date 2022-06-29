@@ -1,8 +1,8 @@
 # @edit
 
-!!! tip "@edit=&lt;n|y&gt;"
-
 Prevent editing objects rezzed in world and attached to the user
+
+!!! tip "@edit=&lt;n|y&gt;"
 
 Any active selections will be dropped.
 
