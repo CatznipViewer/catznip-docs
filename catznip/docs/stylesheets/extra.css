@@ -6,6 +6,18 @@
   --md-typeset-a-color: #B8B8B8;
 }
 
+/* BEGIN Beta label */
+.md-nav.md-nav--primary .md-nav__link span {
+	display: block;
+}
+.md-nav.md-nav--primary .md-nav__link span.label-beta {
+	display: inline-block;
+	font-variant: all-small-caps;
+	font-weight: bold;
+	vertical-align: super;
+}
+/* END Beta label */
+
 .md-typeset {
 	font-size: 15px;
 }
