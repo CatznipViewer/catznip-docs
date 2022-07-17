@@ -1,0 +1,1782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Catznip R9 - Catznip Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="none" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catznip-r9" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-header__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Catznip Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catznip R9
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/block_list/" class="md-tabs__link">
+        Catznip Features
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how_to/avatar/" class="md-tabs__link">
+        How To
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../rlva/allinone/" class="md-tabs__link">
+        RLVa
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../r14/" class="md-tabs__link md-tabs__link--active">
+        Release Notes
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        Contact
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-nav__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    Catznip Viewer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Catznip Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catznip Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Catznip Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/block_list/" class="md-nav__link">
+        Block List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/crash_reporting/" class="md-nav__link">
+        Crash Reporting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/derender_objects/" class="md-nav__link">
+        Derender Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/inventory/" class="md-nav__link">
+        Inventory Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/mini_map/" class="md-nav__link">
+        Mini Map Parcels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/restore_to_last/" class="md-nav__link">
+        Restore to Last Position
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/script_recovery/" class="md-nav__link">
+        Script Recovery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/shared_wear/" class="md-nav__link">
+        Shared Wear
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/spell_checker/" class="md-nav__link">
+        Spell Checker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/usability_enchancements/" class="md-nav__link">
+        Usability Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          How To
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How To" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          How To
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/avatar/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/clean_install/" class="md-nav__link">
+        Clean Install The Viewer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          RLVa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="RLVa" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          RLVa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/allinone/" class="md-nav__link">
+        Full RLVa Command List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/avatar_commands/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/camera_commands/" class="md-nav__link">
+        Camera
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/clothing_and_attachment_commands/" class="md-nav__link">
+        Clothing & Attachments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/communication_commands/" class="md-nav__link">
+        Communications
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Release Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r14/" class="md-nav__link">
+        <span>Catznip R14  <span class="label-beta">(Beta)</span></span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_2/" class="md-nav__link">
+        Catznip R13.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_1/" class="md-nav__link">
+        Catznip R13.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13/" class="md-nav__link">
+        Catznip R13
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_4/" class="md-nav__link">
+        Catznip R12.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_3/" class="md-nav__link">
+        Catznip R12.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_2/" class="md-nav__link">
+        Catznip R12.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_1/" class="md-nav__link">
+        Catznip R12.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12/" class="md-nav__link">
+        Catznip R12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r11/" class="md-nav__link">
+        Catznip R11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r10/" class="md-nav__link">
+        Catznip R10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Catznip R9
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Catznip R9
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-picker" class="md-nav__link">
+    Avatar picker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-tools" class="md-nav__link">
+    Build Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-enhancements" class="md-nav__link">
+    Inventory Enhancements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landmarks" class="md-nav__link">
+    Landmarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#people-panel" class="md-nav__link">
+    People panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-view" class="md-nav__link">
+    Move / View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notecards-scripts-text-editors" class="md-nav__link">
+    Notecards / Scripts / Text editors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-preferences-overhaul-wip" class="md-nav__link">
+    Major preferences overhaul (WIP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences-troubleshooting" class="md-nav__link">
+    Preferences / Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-overhaul" class="md-nav__link">
+    UI overhaul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updater" class="md-nav__link">
+    Updater
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewer" class="md-nav__link">
+    Viewer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minor-changes" class="md-nav__link">
+    Minor changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catznip-bugfixes" class="md-nav__link">
+    Catznip bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linden-viewer-bugfixes" class="md-nav__link">
+    Linden viewer bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva-updates-and-fixes" class="md-nav__link">
+    RLVa Updates and Fixes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08_1/" class="md-nav__link">
+        Catznip R8.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08/" class="md-nav__link">
+        Catznip R8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r07/" class="md-nav__link">
+        Catznip R7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r06/" class="md-nav__link">
+        Catznip R6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r05/" class="md-nav__link">
+        Catznip R5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r04/" class="md-nav__link">
+        Catznip R3 & R4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Contact
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Contact" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Contact
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/credits/" class="md-nav__link">
+        Catznip Team
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/privacy_policy/" class="md-nav__link">
+        Privacy policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-picker" class="md-nav__link">
+    Avatar picker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-tools" class="md-nav__link">
+    Build Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inventory-enhancements" class="md-nav__link">
+    Inventory Enhancements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#landmarks" class="md-nav__link">
+    Landmarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#people-panel" class="md-nav__link">
+    People panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move-view" class="md-nav__link">
+    Move / View
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notecards-scripts-text-editors" class="md-nav__link">
+    Notecards / Scripts / Text editors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#major-preferences-overhaul-wip" class="md-nav__link">
+    Major preferences overhaul (WIP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences-troubleshooting" class="md-nav__link">
+    Preferences / Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profiles" class="md-nav__link">
+    Profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-overhaul" class="md-nav__link">
+    UI overhaul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updater" class="md-nav__link">
+    Updater
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewer" class="md-nav__link">
+    Viewer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minor-changes" class="md-nav__link">
+    Minor changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catznip-bugfixes" class="md-nav__link">
+    Catznip bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linden-viewer-bugfixes" class="md-nav__link">
+    Linden viewer bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva-updates-and-fixes" class="md-nav__link">
+    RLVa Updates and Fixes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="catznip-r9">Catznip R9</h1>
+<p><img alt="Catznip_R9" src="Catznip_R9.png" /></p>
+<p>This release has certainly been a long time coming and is our biggest single release to date, it will also be the last mega update as we move to a new shorter faster release cycle.</p>
+<p>The main new feature in R9.0 is the Chat which has been rebuilt from scratch. <abbr title="Linden Lab™">LL</abbr> added <abbr title="Linden Chat User Interface">CHUI</abbr>, we spent a huge amount of time trying to make it nice only to find the performance with it enabled was unacceptable. As the old chat was removed at the same time we had no choice but to start over. Chat has been redesigned from scratch and includes many <abbr title="Linden Chat User Interface">CHUI</abbr> inspired features.</p>
+<p>Inventory searching has been made lightning fast, textures now have a preview tool-tip, <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> editor got a lot of love with a tighter <abbr title="User Interface">UI</abbr>, as you type highlighting for text searches, more work was done overhauling the <abbr title="User Interface">UI</abbr> and a new in place updater was added.</p>
+<p>From Linden Lab this release adds <abbr title="Linden Chat User Interface">CHUI</abbr> (even though we don't expose it), facebook support, fitted <abbr title="A type of model created in an external application (such as Maya, 3DS Max, or Blender).">mesh</abbr>, materials, ribbon particles and request teleports amongst others things.</p>
+<p>In answer to huge gap between R8 and this release we shelved a lot of things we were working on and started our open beta program. A huge thank you to everyone who got involved, reported bugs and issues, helped find bugs and crashes, made suggestions. This has been so successful that it will form the basis of all releases going forward.</p>
+<p>Future releases will be smaller and incremental with more public testing. We hope this will allow up to keep up with Linden Lab, continue to deliver unique new features and make Catznip the most stable Second Life viewer. There is a small mountain of work we did that just isn't polished enough to get in this time, expect to see a new things coming through thick and fast as we go forward.</p>
+<h2 id="avatar-picker">Avatar picker</h2>
+<ul>
+<li>added : ability to filter the friends tab in the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> picker</li>
+<li>changed : <a href="https://catznip.atlassian.net/browse/CATZ-116">CATZ-116</a> Add usernames to <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> picker's Friends tab</li>
+</ul>
+<h2 id="build-tools">Build Tools</h2>
+<ul>
+<li>added : drag-and-drop textures directly onto a prim <abbr title="One texturable side of a prim, or mesh.">face</abbr> using local textures as the backing store (Windows only)</li>
+<li>added : drag-and-drop uploading of textures (Windows only)</li>
+<li>added : "Selection Options" floater to the build floater grouping all selection related viewer options</li>
+<li>added : "World / Options / Select Only Copyable Objects" option to the main viewer menu as well</li>
+<li>added : option to prevent turning towards a newly selected <abbr title="A collection of one or more linked prims or mesh.">object</abbr><ul>
+<li>controlled by 'RotateAtSelection'</li>
+</ul>
+</li>
+<li>added : option to prevent the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr>'s arm from pointing at a newly selected <abbr title="A collection of one or more linked prims or mesh.">object</abbr><ul>
+<li>controlled by 'SendPointAt'</li>
+</ul>
+</li>
+<li>added : copy/paste of the different types of <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> parameters<ul>
+<li>Three possible scenarios (always on a single <abbr title="A collection of one or more linked prims or mesh.">object</abbr>):<ul>
+<li>(1) copy all <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> faces (which may or may not be identical) =&gt; pastes the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> data on matching selected faces</li>
+<li>(2) copy one <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> <abbr title="One texturable side of a prim, or mesh.">face</abbr> =&gt; pastes the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> data on all selected faces</li>
+<li>(3) copy several <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> faces =&gt; pastes the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> data on matching selected faces</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>added : pipette for the different types of <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> parameters</li>
+</ul>
+<h2 id="chat">Chat</h2>
+<ul>
+<li>internal : restoration of <abbr title="Instant Message">IM</abbr>/P2P/group chiclets + <abbr title="Instant Message">IM</abbr> syswell <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> + <abbr title="Instant Message">IM</abbr> conversations floater<ul>
+<li>this took all of the time :(</li>
+</ul>
+</li>
+<li>added : "Chat sounds" floater to configure the different <abbr title="User Interface">UI</abbr> chat/offer related sounds</li>
+<li>added : "&lt;name&gt; is typing..." tentative message is shown in the chat history while the other party is typing</li>
+<li>added : show a context menu when right-clicking a conversation tab</li>
+<li>added : persist unread IMs to disk so they can be restored in case of a crash or log-off</li>
+<li>added : inplace search control for text editors<ul>
+<li>current selection is used as the search 'phrase' when opening the inplace editor</li>
+</ul>
+</li>
+<li>added : <a href="https://catznip.atlassian.net/browse/CATZ-102">CATZ-102</a> Ability to scroll the conversations floater tabs with the mouse wheel</li>
+<li>added : "Request Teleport" to the context menu of a resident link in chat</li>
+<li>added : "Chat Bar" option to the <abbr title="Instant Message">IM</abbr> session chat bar and chat history context menus to toggle between expandable and single-line text editors</li>
+<li>added : split the "Teleport" option on the <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> P2P context menu into "Offer Teleport" and "Request Teleport" and added an option for "Pay" as well</li>
+<li>added : option to control whether chat or group notice toasts will show above/below unfocused floaters (such as the mini-map)<ul>
+<li>main setting is "NotificationToastFrontmost"</li>
+<li>"NotificationToastFrontmostFocus" further controls whether new notification toasts will appear above/below floaters that currently have focus (such as the conversations floater)</li>
+</ul>
+</li>
+<li>added : "Conversations" button to the toolbar commands<ul>
+<li>"Nearby Chat" will highlight when the nearby char floater is visible (whether docked or undocked) and toggle it when pressed</li>
+<li>"Conversations" will highlight when the conversations floater is visible and toggle it when pressed</li>
+<li>changed : 'ChicletBarAlignment' can be toggled at runtime and no longer requires a restart** changed : behavior of arrow keys when focus is on the conversations container, nearby chat or <abbr title="Instant Message">IM</abbr> conversation<ul>
+<li><abbr title="Linden Chat User Interface">CHUI</abbr> default: arrow keys never move unless "ArrowKeysAlwaysMove" is set to TRUE</li>
+<li>additionally: arrow keys move the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> if focus is on a conversation floater and no text has been entered (legacy behavior)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>added : "control panel" for P2P <abbr title="Instant Message">IM</abbr> sessions which currently shows an <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr>'s profile picture and an excerpt of their profile information</li>
+<li>added : configurable sounds for <abbr title="To instantly change your location inworld.">teleport</abbr> and inventory offers, <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> question dialogs, group notices and <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> restart events</li>
+<li>added : toolbar buttons for group conversations    -&gt; "View Information", "Show Chat History" and "View Notices"</li>
+<li>added : "History Search", "View Profile", "Offer/Request Teleport", "Chat History" and "Pay" toolbar buttons to the <abbr title="Instant Message">IM</abbr> session floater</li>
+</ul>
+<h2 id="inventory-enhancements">Inventory Enhancements</h2>
+<ul>
+<li>added : significant speed improvements when filtering inventory</li>
+<li>added : 'Open in Inventory' checkbox to the "Buy Contents" floater + <abbr title="User Interface">UI</abbr> layout cleanup</li>
+<li>added : <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> <abbr title="Pop up showing more information, can be clicked on.">tooltip</abbr> for inventory items</li>
+<li>added : "Copy Outfit List to Clipboard" is now available when right-clicking any outfit folders in your inventory</li>
+<li>added : option to clear the current inventory filter rather than create a new inventory floater when the shown item is currently filtered<ul>
+<li>controlled by 'InventoryShowItemClearsFilter' (default: clear filter)</li>
+</ul>
+</li>
+<li>changed : always show the "Received Items" folder if the inventory's panel contents are filtered (with a non-default filter)</li>
+<li>changed : don't hide empty system folders by default ('DebugHideEmptySystemFolders' to FALSE)</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<ul>
+<li>added : option to control how offered inventory is handled while marked as 'Do not Disturb'<ul>
+<li>Pop up a <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> as normal (default)</li>
+<li>Auto-accept the offer</li>
+<li>Auto-decline the offer</li>
+</ul>
+</li>
+<li>added : double-clicking on the title bar of a floater will collapse it</li>
+<li>added : extra dictionaries for the spell checker (German, French, Italian and Polish)</li>
+<li>added : Xanthe's Windlight presets.</commit></li>
+<li>changed : cycle between (unacknowledged) inventory offers or <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> floaters<ul>
+<li>e.g. pay a gacha machine 5 times / buy 3 items from <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> vendors in a row</li>
+<li>every time you press "Keep" the next inventory offer will automatically pop-up saving you an extra click and ensuring you'll never miss one</li>
+</ul>
+</li>
+<li>changed : restore the legacy behavior of showing a <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> preview at full resolution (if possible)<ul>
+<li>if (one of) the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> preview's dimensions exceeds the window size the preview should be resized proportionally rather than "best fit"&lt;</li>
+</ul>
+</li>
+<li>changed : normalized display of time in the viewers to SLT (PDT/PST)<ul>
+<li>offline IMs show SLT rather than local time</li>
+<li><abbr title="Agreement between an estate owner and Resident who purchases land in the estate. Specifies whether the land can be resold, zoning, code of conduct, and other restrictions.">covenant</abbr> modify timestamp shown as SLT rather than local time</li>
+<li>group notice toasts shown as SLT rather than UTC time</li>
+<li>group notice times in the group floater shown as SLT rather than local time</li>
+<li>timezone indicator was added to help point out the difference to new Catznip users:<ul>
+<li>Before: Saved Mon Aug 19 14:50:10 2013</li>
+<li>After : Saved Mon Aug 19 2013 05:50:10 PDT</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>changed : filter duplicate landmarks on the world map landmarks combo box + provide the option to only show self-created landmarks<ul>
+<li>controllable through the 'WorldMapFilterSelfLandmarks' debug setting</li>
+</ul>
+</li>
+</ul>
+<h2 id="landmarks">Landmarks</h2>
+<ul>
+<li>added : "Landmark This Place" shows the new place floater to edit the name and/or description</li>
+</ul>
+<h2 id="people-panel">People panel</h2>
+<ul>
+<li>added : "Highlight Hidden Groups" option to the view/sort menu for the People/Groups panel</li>
+<li>added : "Online friends / Total friends" to the online friends accordion tab title</li>
+</ul>
+<h2 id="move-view">Move / View</h2>
+<ul>
+<li>changed : compacted the camera and movement floaters</li>
+<li>added : slider / debug setting for the camera/move floater transparency</li>
+</ul>
+<h2 id="notecards-scripts-text-editors">Notecards / Scripts / Text editors</h2>
+<ul>
+<li>added : recovery support for unsaved notecards (embedded items are not preserved)</li>
+<li>added : <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> tooltips for embedded notecard items</li>
+<li>added : use the current selection as the default search string</li>
+<li>added : highlighting of occurrences in the target editor when using the Search/Replace floater</li>
+<li>added : keyboard shortcuts to the <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> editor menu<ul>
+<li>F1 opens the <abbr title="Linden Scripting Language">LSL</abbr> reference</li>
+<li>Shift+F1 opens keyboard help</li>
+<li>Ctrl+G opens the "Go to line" floater</li>
+</ul>
+</li>
+<li>changed : "Go to Line" and clicking on a <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> error will ensure (at least) three lines above/below the target line are visible</li>
+<li>changed : case-insensitive search is enabled by default (for notecards, scripts and text editors)</li>
+</ul>
+<h2 id="major-preferences-overhaul-wip">Major preferences overhaul (<abbr title="Work in progress">WIP</abbr>)</h2>
+<ul>
+<li>added : provide tooltips to settings-driven controls by using the setting's description field</li>
+<li>changed : complete chat preferences overhaul into multiple panels</li>
+<li>changed : integrated the "Translation" floater into the Chat preferences panel + updated layout + updated translations</li>
+<li>changed : integrated the "Auto Replace" floater into the Chat preferences panel + updated layout + updated translations</li>
+<li>changed : integrated the "Spell Checking" floater into the Chat preferences panel + updated layout + updated translations</li>
+<li>changed : "Sound and Media" preferences panel was overhauled</li>
+<li>changed : "(requires restart)" is now consistent</li>
+</ul>
+<h2 id="preferences-troubleshooting">Preferences / Troubleshooting</h2>
+<ul>
+<li>added : "Troubleshooting" tab to the preferences floater<ul>
+<li>Catznip Group Chat : opens the support group (conversation or group profile to join if not a member)</li>
+<li>Reset Avatar       : force-clears the Current Outfits folder and wears the default <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> outfit on the next relog</li>
+<li>Clear Viewer Settings : clears the non-personal viewer settings on the next viewer restart (preferences, menu options, debug settings, ...)</li>
+<li>Clear Personal Settings : clears person (per-account) viewer settings on the next relog (toolbar layout, saved notifications, derender list, ...)</li>
+<li>Clear Cache : clears viewer cache on the next viewer restart</li>
+</ul>
+</li>
+<li>added : Option to use raw joystick deltas<ul>
+<li>debug setting 'JoystickRawDeltas' (enabled by default)</li>
+</ul>
+</li>
+<li>changed : Tweaked XBox360 pad defaults into something semi-sane</li>
+</ul>
+<h2 id="profiles">Profiles</h2>
+<ul>
+<li>added : "Copy to clipboard" fly-out button to the main profile panel (options to copy full name, display name, user name, <abbr title="Second Life URL, that identifies a location inworld">SLurl</abbr> and <abbr title="Universally Unique Identifier, a 128-bit (16 byte) value used to identify things in Second Life">UUID</abbr>)</li>
+<li>added : translations for the profile floater and related profile panels</li>
+<li>changed : rearranged the profile action buttons (removed "Add Friend", added "Pay" and "View Web Profile" buttons and replaced the overflow button with a gear menu button)</li>
+</ul>
+<h2 id="ui-overhaul"><abbr title="User Interface">UI</abbr> overhaul</h2>
+<ul>
+<li>added : new <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> icons for unread <abbr title="Instant Message">IM</abbr> overlay and objects/<abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> dialogs</li>
+<li>added : new "Teleport" and "Pay" icons added to all panels/floaters with a 'Teleport' toolbar option</li>
+<li>added : new "Play" icons (32x32)</li>
+<li>added : updated 20px default person and group icons</li>
+<li>added : clickable social media icons to the about floater</li>
+<li>changed : much improved <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> restart floater with added landmarks drop-down</li>
+<li>changed : integrated web browser showing stop and refresh buttons</li>
+<li>changed : updated "<abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> picker" floater</li>
+<li>changed : improved group invite panel/not-a-floater/why ...</li>
+<li>changed : "About" floater layout tweaks .. lalala :P</li>
+<li>changed : tightened up world map floater</li>
+<li>changed : itty bitty teeny weeny xui floater thingy</li>
+<li>changed : RLVa Strings floater <abbr title="User Interface">UI</abbr></li>
+<li>changed : Updated toybox floater</li>
+<li>changed : Different icons for about land objects listing</li>
+<li>changed : Tidy choose group floater</li>
+<li>changed : Tidy inspect objects floater</li>
+<li>changed : Tidy <abbr title="Linden Scripting Language">LSL</abbr> ref floater</li>
+<li>changed : Tidy web browser</li>
+<li>changed : Tightened up <abbr title="A type of model created in an external application (such as Maya, 3DS Max, or Blender).">mesh</abbr> upload floater</li>
+<li>changed : Tightened up <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> debug floater</li>
+<li>changed : Tidy buy <abbr title="A collection of one or more linked prims or mesh.">object</abbr> floater</li>
+<li>changed : New group notice title and fonts</li>
+<li>changed : Cleaned up notecard floater</li>
+</ul>
+<h2 id="updater">Updater</h2>
+<ul>
+<li>added : "Check for Updates" menu item to the main Help menu to trigger a manual update check with user feedback</li>
+<li>added : floater to track the progress of the updater download</li>
+<li>changed : only apply the updater download bandwidth cap once the user has passed the login screen</li>
+<li>changed : don't prompt the user to launch the viewer after instalation</li>
+</ul>
+<h2 id="viewer">Viewer</h2>
+<ul>
+<li>added : multi-user drop down on the login screen<ul>
+<li>stored accounts can removed by clicking the little 'x'</li>
+</ul>
+</li>
+<li>added : Catznip R9 release quote<ul>
+<li>"This release makes no sense what-so-ever." ~ Trinity Dejavu</li>
+</ul>
+</li>
+<li>added : Branding for Catznip Homebrew</li>
+<li>added : Social media links to the Help menu</li>
+<li>added : __GL_THREADED_OPTIMIZATIONS For Linux Users.</li>
+<li>changed : only fetch the feature/<abbr title="Graphics Processing Unit">GPU</abbr> table if the file has actually changed</li>
+<li>changed : removed references to the 'Linux Client Beta' .. only 7 years late</li>
+</ul>
+<h2 id="minor-changes">Minor changes</h2>
+<ul>
+<li>changed : shorten the name of the Second Life grids</li>
+<li>changed : show the agent's current <abbr title="The division of land in Second Life owned by a single Resident or group.">parcel</abbr> name rather than the <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> name as a default message when offering a <abbr title="To instantly change your location inworld.">teleport</abbr></li>
+<li>changed : use a <abbr title="A connected set of Second Life simulators, defining an individual virtual world. The main public Second Life grid is known as Agni; others exist for development and testing.">grid</abbr>-specific home/last start screen</li>
+<li>changed : remember the last used tab in the Search floater</li>
+<li>changed : allow multi-selection on the mute and derender lists</li>
+<li>changed : remember the last-used sort order and sort direction of the mute and derender lists</li>
+<li>changed : selectively reverted <abbr title="Linden Lab™">LL</abbr> changes to how/when user names (now referred to as account name) are displayed</li>
+<li>changed : don't show "Restore to Last Position" on <abbr title="A collection of one or more linked prims or mesh.">object</abbr> links</li>
+<li>changed : don't show "Share" on the context menu of system (or outfit) folders</li>
+<li>changed : updated German menu translations (Thanks Qetesh)</li>
+<li>changed : <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> picker range now matches people floater</li>
+<li>changed : Autoreplace list renamed to avoid confusion</li>
+<li>changed : removed the shortcut key for "Force Breakpoint" in the Debug / Force an Error menu</li>
+</ul>
+<h2 id="catznip-bugfixes">Catznip bugfixes</h2>
+<ul>
+<li>fixed : freeze when picking "Detach Folder" from the <abbr title="An object (for example: clothing, weapons, jewelry, or shoes) that can be attached to an avatar at a specific location.">attachment</abbr> context menu (or the Wearing panel)</li>
+<li>fixed : don't log raw notifications SLURLs to <abbr title="Instant Message">IM</abbr> (fixes FriendOnlineOffline and PaymentReceived/Sent not logging in a human friendly way)</li>
+<li>fixed : persisted group notices no longer restore on the next log-on</li>
+<li>fixed : vertical tat container control's vertical scrolling is non-functional (among other issues)</li>
+<li>fixed : vertical tab container control doesn't scroll to show the current conversation if it's out of the visible scroll range</li>
+<li>fixed : cancelling the <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> recovery floater doesn't delete the .lslbackup files</li>
+<li>fixed : picking "Session/Permanent Derender" from the <abbr title="A collection of one or more linked prims or mesh.">object</abbr> context menu opens the derender list but doesn't select the newly added entry</li>
+<li>fixed : translations for the "Zoom" mini-map context submenu are missing</li>
+<li>fixed : &lt;Ctrl&gt;+&lt;Enter&gt; won't wear the selected item  (should behave the same as &lt;Ctrl&gt;-clicking the inventory item)</li>
+<li>fixed : "<abbr title="Second Life URL, that identifies a location inworld">SLurl</abbr> was received from an untrusted browser and has been blocked" when clicking "Teleport" on a web search result when 'PreInitSearch' is set to TRUE</li>
+<li>fixed : "Create (Group) Notice" floater isn't centered when opened</li>
+<li>fixed : "inventory" or "in-world" indicator is missing on the inventory item properties floater (moved to a suffix of the floater title</li>
+<li>fixed : the sale type combobox of the inventory item properties floater doesn't show the current sale type, or update the item's sale type when changed</li>
+<li>fixed : <abbr title="The division of land in Second Life owned by a single Resident or group.">parcel</abbr> text doesn't always expand to fit available space in the mini-location bar</li>
+<li>fixed : various translation fixes for the debug settings, <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> queue and gesture floaters</li>
+<li>fixed : "Add contact" results in "Cannot create inventory item" message</li>
+<li>fixed : "maturity_desired_textbox" textbox control is missing from the general preferences panel</li>
+<li>fixed : having the toast and <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> bar alignment on opposite sides of the screen incorrectly reserves space for the dock control (toasts appear with a gap at the top of the screen)</li>
+<li>fixed : "Edit" on the inventory item context men for attachments shouldn't use a temporary selection if the build floater is active</li>
+<li>fixed : cannot search for usernames in the people panel when 'AgentLinkShowUsernames' is set to 'never'</li>
+<li>fixed : avatars at the maximum coarse update height are shown as being present at that height rather than showing as having an unknown position</li>
+<li>fixed : "Find Original" doesn't highlight items in the Inbox folder</li>
+<li>fixed : inventory items jump/flicker/radically change scroll position when creating a new inventory item</li>
+<li>fixed : "Cut" isn't shown on the inventory item context menu for inventory links</li>
+<li>fixed : "Paste" isn't shown as disabled when copying a "no copy" item onto the clipboard</li>
+<li>fixed : crash when resuming a download on start-up due to freed memory</li>
+<li>fixed : web content floater now has correct button icon for 'Stop'</li>
+<li>fixed : speculative fix for notifications/IMs (rarely) being saved as the agent's display name rather than their legacy/user name</li>
+<li>fixed : translations for me menu <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> status were missing</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-58">CATZ-58</a> "Typing" is visible in the nametag when bubble chat is enabled for as long as the chat is visible</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-97">CATZ-97</a> 'View Notices' menu item is active for group 'none'</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-99">CATZ-99</a> Export Auto-Replace list wants to Import instead</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-104">CATZ-104</a> Help / Report Bug Points to invalid URL</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-121">CATZ-121</a> Long display name overlaps the user name on the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> inspector</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CRASH-7">CRASH-7</a> Crash in LLOutfitsView::setSelectedOutfitByUUID() when logging on with a newly created account</li>
+</ul>
+<h2 id="linden-viewer-bugfixes">Linden viewer bugfixes</h2>
+<ul>
+<li>fixed : chat conversation navigation keys are backwards in <abbr title="Linden Chat User Interface">CHUI</abbr></li>
+<li>fixed : Alt-Up/Down switches between <abbr title="Instant Message">IM</abbr> sessions in <abbr title="Linden Chat User Interface">CHUI</abbr>-mode when the conversation floater is torn off rather than docked</li>
+<li>fixed : the conversations floater doesn't hide in <abbr title="Linden Chat User Interface">CHUI</abbr> when tearing off nearby chat if it's the only remaining conversation</li>
+<li>fixed : clicking the "Chat" toolbar button after logon shows both the nearby chat and conversations floater if the nearby chat floater was torn off at the previous logoff</li>
+<li>fixed : don't fetch the entire inventory upon login</li>
+<li>fixed : the Chat toolbar button doesn't toggle the visibility of nearby chat when it's the only remaining conversation and is torn off</li>
+<li>fixed : a lot of LLFloaterIMContainerView functions are unnecessarily called per-frame (refactored + optimized since a few are expensive no-ops)</li>
+<li>fixed : "Zoom In" on the <abbr title="Instant Message">IM</abbr> conversation gear menu is always disabled</li>
+<li>fixed : Help / Keyword Help doesn't load the correct page when unicode characters are present in the <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> editor</li>
+<li>fixed : "Teleport completed from" nearby chat message on successful completion of a <abbr title="To instantly change your location inworld.">teleport</abbr> is missing</li>
+<li>fixed : LLOfferInfo::forceResponse() forces a response on the wrong notification (causes lost inventory while marked as DnD)</li>
+<li>fixed : clicking on a separator on the side of a disabled menu item shouldn't dismiss the menu</li>
+<li>fixed : only show the "Block Particle Owner" context menu option when the user right-clicked on/through a particle</li>
+<li>fixed : friends list doesn't always initialize when opened for the first time</li>
+<li>fixed : dragging the volume slider doesn't unmute the corresponding setting (unless preferences were opened before logging into the viewer)</li>
+<li>fixed : muting world sounds doesn't disable the "Play gestures" checkbox on the volume pulldown panel</li>
+<li>fixed : toggling media or streaming audio have "Pref.updateMediaAutoPlayCheckbox" copy/pasted from preferences even though it doesn't apply (and doesn't work)</li>
+<li>fixed : minimum width/height for multi-floaters is calculated wrong</li>
+<li>fixed : "Missing String in strings.xml" appears in the log when opening the gestures floater</li>
+<li>fixed : viewer idles for a few seconds before shutting down after clicking the close button</li>
+<li>fixed : copy/pasting text with an ending line-break into a text editor control doesn't insert a line break segment</li>
+<li>fixed : don't fetch the entire inventory upon login (yet again)</li>
+<li>fixed : opening preferences before log on will instantiate and initialize LLConversationLog before we have account specific settings or file paths</li>
+<li>fixed : viewer clips mouse to its rectangle when switching into <abbr title="Viewer mode in which you see from a first-person perspective.">mouselook</abbr> while it's not the active application</li>
+<li>fixed : potential crash in LLFloaterIMSession::removeTypingIndicator() by reusing an already deleted pointer</li>
+<li>fixed : don't send typing start packets to groups or conferences</li>
+<li>fixed : RenderResolutionDivisor is non-functional</li>
+<li>fixed : double-click <abbr title="To instantly change your location inworld.">teleport</abbr> is initiated when left-clicking to give focus back to the viewer<ul>
+<li>viewer now remains in <abbr title="Viewer mode in which you see from a first-person perspective.">mouselook</abbr> after "activating" the application</li>
+</ul>
+</li>
+<li>fixed : the "Save logs" combo button has the same name as another control and isn't actually being disabled from code</li>
+<li>fixed : the "To &lt;recipient&gt;" label is still visible on the chat entry control when it has focus (reverses and actually fixes the root cause behind <abbr title="Linden Chat User Interface">CHUI</abbr>-958)</li>
+<li>fixed : searching for a (partial) <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> name that matches the agent's <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> shows no results</li>
+<li>fixed : accepting a <abbr title="To instantly change your location inworld.">teleport</abbr> offer from a different <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> than it was received in will stall at the <abbr title="To instantly change your location inworld.">teleport</abbr> screen<ul>
+<li>since we can't fix this, we'll visually cancel the notification instead after teleporting to a different <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr></li>
+</ul>
+</li>
+<li>fixed : notification sound plays twice if you have both "new conversation" and "new <abbr title="Instant Message">IM</abbr>" checked</li>
+<li>fixed : can't copy/paste a folder containing links</li>
+<li>fixed : can't click on a link if there's an active selection in the text editor</li>
+<li>fixed : logon / inventory fetching freezes due to <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> tracker updates and excessive calling card updates</li>
+<li>fixed : the 'IM_unblock_only_groups_friends' notification isn't shown when a non-friend IMs with 'VoiceCallsFriendsOnly' set to TRUE</li>
+<li>fixed : <a href="https://jira.secondlife.com/browse/BUG-4617">BUG-4617</a> Renaming an inventory folder can result in a different folder being moved inside another folder</li>
+<li>fixed : <a href="https://jira.secondlife.com/browse/BUG-3527">BUG-3527</a> Replacing a misspelling surrounded by line break segments results in only line breaks being inserted</li>
+<li>fixed : <a href="https://catznip.atlassian.net/browse/CATZ-59">CATZ-59</a> The search/replace floater has an unintuitive tab order</li>
+<li>fixed : <a href="https://jira.secondlife.com/browse/STORM-2029">STORM-2029</a> If someone on your block/mute list initiates a group conversation you'll never see chat for that group during that logon session</li>
+</ul>
+<h2 id="rlva-updates-and-fixes">RLVa Updates and Fixes</h2>
+<ul>
+<li>added : @tprequest=n|y and @accepttprequest:[uuid]=n|y</li>
+<li>added : Give to #RLV <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr>-to-agent and agent-to-agent offers can contain subfolders<ul>
+<li>limited to 3 levels (e.g. #RLV/~FolderA/FolderB/FolderC)</li>
+<li>The #RLV folder is auto-created if it doesn't currently exist</li>
+</ul>
+</li>
+<li>added : RLVa German menu translations</li>
+<li>changed : show a limited context menu in the nearby people panel when @shownames restricted<ul>
+<li>"Offer/Request Teleport" (filtered)</li>
+<li>"Zoom in"</li>
+<li>Block/Unblock</li>
+</ul>
+</li>
+<li>changed : llRegionSayTo messages are no longer subject to @recvchat or @recvemote</li>
+<li>changed : mark @adjustheight as deprecated since it's not supported by <abbr title="Server Side Appearance">SSA</abbr><ul>
+<li>a wearable edit workaround would be clumsy, not work under all circumstances and could potentially cause asset corruption</li>
+</ul>
+</li>
+<li>changed : RLVa debug is now develop. Much sexier.</li>
+<li>fixed : locked folder lookups don't properly refresh when an item is taken off (or worn)</li>
+<li>fixed : @getstatus and @getstatusall should specify an (optional) separator<ul>
+<li>added support for both @getstatustp;,=123 and @getstatus;,=123</li>
+</ul>
+</li>
+<li>fixed : <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> name and global coordinates are shown on the About floater when @showloc restricted</li>
+<li>fixed : "Find Original" on the Wearing panel's context menu opens the default inventory floater when @showinv restricted</li>
+<li>fixed : RLVa floater button sizes with wide font.</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../r10/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Catznip R10" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Catznip R10
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../r08_1/" class="md-footer__link md-footer__link--next" aria-label="Next: Catznip R8.1" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Catznip R8.1
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+    
+  </body>
+</html>

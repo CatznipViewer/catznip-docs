@@ -1,0 +1,1824 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Catznip R12 - Catznip Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="none" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catznip-r12" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-header__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Catznip Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catznip R12
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/block_list/" class="md-tabs__link">
+        Catznip Features
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how_to/avatar/" class="md-tabs__link">
+        How To
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../rlva/allinone/" class="md-tabs__link">
+        RLVa
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../r14/" class="md-tabs__link md-tabs__link--active">
+        Release Notes
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        Contact
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-nav__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    Catznip Viewer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Catznip Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catznip Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Catznip Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/block_list/" class="md-nav__link">
+        Block List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/crash_reporting/" class="md-nav__link">
+        Crash Reporting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/derender_objects/" class="md-nav__link">
+        Derender Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/inventory/" class="md-nav__link">
+        Inventory Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/mini_map/" class="md-nav__link">
+        Mini Map Parcels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/restore_to_last/" class="md-nav__link">
+        Restore to Last Position
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/script_recovery/" class="md-nav__link">
+        Script Recovery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/shared_wear/" class="md-nav__link">
+        Shared Wear
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/spell_checker/" class="md-nav__link">
+        Spell Checker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/usability_enchancements/" class="md-nav__link">
+        Usability Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          How To
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How To" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          How To
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/avatar/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/clean_install/" class="md-nav__link">
+        Clean Install The Viewer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          RLVa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="RLVa" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          RLVa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/allinone/" class="md-nav__link">
+        Full RLVa Command List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/avatar_commands/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/camera_commands/" class="md-nav__link">
+        Camera
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/clothing_and_attachment_commands/" class="md-nav__link">
+        Clothing & Attachments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/communication_commands/" class="md-nav__link">
+        Communications
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Release Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r14/" class="md-nav__link">
+        <span>Catznip R14  <span class="label-beta">(Beta)</span></span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_2/" class="md-nav__link">
+        Catznip R13.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_1/" class="md-nav__link">
+        Catznip R13.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13/" class="md-nav__link">
+        Catznip R13
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_4/" class="md-nav__link">
+        Catznip R12.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_3/" class="md-nav__link">
+        Catznip R12.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_2/" class="md-nav__link">
+        Catznip R12.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_1/" class="md-nav__link">
+        Catznip R12.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Catznip R12
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Catznip R12
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inventory" class="md-nav__link">
+    Inventory
+  </a>
+  
+    <nav class="md-nav" aria-label="Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accept-in" class="md-nav__link">
+    Accept in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accept-in-object-folder" class="md-nav__link">
+    Accept in (Object folder)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-contents-in" class="md-nav__link">
+    Show Contents In
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mark-as-protectedsystem-folders" class="md-nav__link">
+    Mark as protected/system folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-context-menu-enhancements" class="md-nav__link">
+    Folder context menu enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#take-replace-links" class="md-nav__link">
+    Take (Replace Links)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-preferences" class="md-nav__link">
+    Quick preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    Main
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-inventory" class="md-nav__link">
+    Quick inventory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-snoozing" class="md-nav__link">
+    Group snoozing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-join-conferences-started-by-friends" class="md-nav__link">
+    Only join conferences started by friends
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-history" class="md-nav__link">
+    Chat History
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnifying-glass-on-avatar-profile-pictures" class="md-nav__link">
+    Magnifying glass on avatar profile picture(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-filtering" class="md-nav__link">
+    Notifications filtering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    Building
+  </a>
+  
+    <nav class="md-nav" aria-label="Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-flip" class="md-nav__link">
+    Texture flip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hexhtml-color-value-support" class="md-nav__link">
+    Hex/HTML color value support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-restart-floater-shaking" class="md-nav__link">
+    Region restart floater shaking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-texture-memory" class="md-nav__link">
+    Increased texture memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-walking" class="md-nav__link">
+    Mouse walking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-rendering-exceptions" class="md-nav__link">
+    Avatar rendering exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva" class="md-nav__link">
+    RLVa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-minor-improvements" class="md-nav__link">
+    Various minor improvements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-other-bugfixes" class="md-nav__link">
+    Various other bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-website-backend" class="md-nav__link">
+    New website + backend
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r11/" class="md-nav__link">
+        Catznip R11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r10/" class="md-nav__link">
+        Catznip R10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r09/" class="md-nav__link">
+        Catznip R9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08_1/" class="md-nav__link">
+        Catznip R8.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08/" class="md-nav__link">
+        Catznip R8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r07/" class="md-nav__link">
+        Catznip R7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r06/" class="md-nav__link">
+        Catznip R6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r05/" class="md-nav__link">
+        Catznip R5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r04/" class="md-nav__link">
+        Catznip R3 & R4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Contact
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Contact" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Contact
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/credits/" class="md-nav__link">
+        Catznip Team
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/privacy_policy/" class="md-nav__link">
+        Privacy policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inventory" class="md-nav__link">
+    Inventory
+  </a>
+  
+    <nav class="md-nav" aria-label="Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accept-in" class="md-nav__link">
+    Accept in
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accept-in-object-folder" class="md-nav__link">
+    Accept in (Object folder)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching" class="md-nav__link">
+    Searching
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-contents-in" class="md-nav__link">
+    Show Contents In
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mark-as-protectedsystem-folders" class="md-nav__link">
+    Mark as protected/system folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#folder-context-menu-enhancements" class="md-nav__link">
+    Folder context menu enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#take-replace-links" class="md-nav__link">
+    Take (Replace Links)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-preferences" class="md-nav__link">
+    Quick preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    Main
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-inventory" class="md-nav__link">
+    Quick inventory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    Chat
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-snoozing" class="md-nav__link">
+    Group snoozing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-join-conferences-started-by-friends" class="md-nav__link">
+    Only join conferences started by friends
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-history" class="md-nav__link">
+    Chat History
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnifying-glass-on-avatar-profile-pictures" class="md-nav__link">
+    Magnifying glass on avatar profile picture(s)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-filtering" class="md-nav__link">
+    Notifications filtering
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building" class="md-nav__link">
+    Building
+  </a>
+  
+    <nav class="md-nav" aria-label="Building">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture-flip" class="md-nav__link">
+    Texture flip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hexhtml-color-value-support" class="md-nav__link">
+    Hex/HTML color value support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-restart-floater-shaking" class="md-nav__link">
+    Region restart floater shaking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increased-texture-memory" class="md-nav__link">
+    Increased texture memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-walking" class="md-nav__link">
+    Mouse walking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#avatar-rendering-exceptions" class="md-nav__link">
+    Avatar rendering exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva" class="md-nav__link">
+    RLVa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-minor-improvements" class="md-nav__link">
+    Various minor improvements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-other-bugfixes" class="md-nav__link">
+    Various other bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-website-backend" class="md-nav__link">
+    New website + backend
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="catznip-r12">Catznip R12</h1>
+<h2 id="inventory">Inventory</h2>
+<h3 id="accept-in">Accept in</h3>
+<p><img alt="InvAcceptIn &gt;" src="InvAcceptIn.png" /></p>
+<p>This is definitely one of the most important features of this releases and one that (I hope) will have the most impact on how you deal with shopping in Second Life and keeping your inventory manageable.</p>
+<p>I’ve written about this before (see <a href="http://blog.catznip.com/2017/03/catznip-r12-three-days-of-teasers-day-1.html">http://blog.catznip.com/2017/03/catznip-r12-three-days-of-teasers-day-1.html</a>) so I won’t go into minute detail but essentially this feature attempts to keep your inventory more manageable and organized by letting you decide where a folder should go at the time you receive it.</p>
+<p>Imagine going to a shopping event; some of the things you’ll want to buy on the spot, while others you’ll want to grab a demo of. Maybe you try it on the spot, or maybe you’ll accumulate all the demos and then <abbr title="To instantly change your location inworld.">teleport</abbr> home to try things on at your own leisure. Most likely you’ll end up with a bunch of new top level folders cluttering up your inventory and some new things in your Objects folder. And if you sort that then and there anything you bought will end up hopelessly lost.</p>
+<p>With this feature, you’ll now get a new drop-down when you get offered a folder (or on the buy floater as well) letting you decide where something should be saved to so for me personally, anything I buy I put into my “Shopping Bag” folder, and any demos I want to try I divert to my “Demos Only” folder.</p>
+<p>Clicking the browse of the wrench icon will let you simply pick a folder, or provide you with more advanced configuration options:</p>
+<p><img alt="InvAcceptInFlow" src="InvAcceptInFlow.png" /></p>
+<p>This means that if – for instance – I go to this month’s Uber event and buy something it’ll be auto-sorted to a special “Shopping / 2017-December / Uber” folder and even if I don’t unpack or touch a single box I’ll still have some semblance of a sorted inventory.</p>
+<p>(You can get to the “Accept in” configuration floater from the Inventory / Gear menu and “Configure Accept In”)</p>
+<h3 id="accept-in-object-folder">Accept in (Object folder)</h3>
+<p>As useful as the above is, it soon became apparent that boxed up items or demos still presented a problem: I like to demo things at my own house but if the demo is boxed up that means that the demo <abbr title="A collection of one or more linked prims or mesh.">object</abbr> is in the events folder (since I acquired it there), but the unboxed folder will be in a folder for my home <abbr title="A named 256m x 256m (65,536 m²) area hosted on a sim. In common usage, the term &quot;simulator&quot; or &quot;sim&quot; may also refer to a region.">region</abbr> since that’s where I unpacked it.</p>
+<p>Clearly there needed to be some way to keep the contents of an unpacked <abbr title="A collection of one or more linked prims or mesh.">object</abbr> near to where that <abbr title="A collection of one or more linked prims or mesh.">object</abbr> itself lives in your inventory and this new feature was born: for the most part (and if I did everything correctly) you shouldn’t even notice this too much and things will just work as you’d expected them to.</p>
+<p>For instance:</p>
+<p><img alt="InvAcceptInObject" src="InvAcceptInObject.png" /></p>
+<p>If the accept in destination is prefixed with the word “Object:” it simply means that I’m trying to be clever and offering to let you unpack an <abbr title="A collection of one or more linked prims or mesh.">object</abbr> into the same folder the item lives in rather than some completely unrelated folder elsewhere in your inventory.</p>
+<p>Since there are as many inventory organizing schemes as there are residents, this might &gt;not&lt; be the behavior you want in which case you can click the little wrench icon and untick the following:</p>
+<p><img alt="InvAcceptInObjectCfg" src="InvAcceptInObjectCfg.png" /></p>
+<h3 id="searching">Searching</h3>
+<p><img alt="InvFilter" src="InvFilter.png" /></p>
+<p>The next big inventory feature is the completely revamped inventory filter floater which comes in both an expanded (tall) version on the left, or the more compact (tabbed) version on the right. Simply click the arrows in the bottom right to switch between one and the other.</p>
+<p>The biggest change here – and one that I end up using all the time now – is searching your inventory for a keyword. You’ll notice that at the top it says “Exact”, “All” and “Any”:</p>
+<ul>
+<li>Exact – search your inventory as you always have; an item needs to contain exactly what you type in order to show in the filtered list</li>
+<li>All (new) – splits what you type in words; in order to be visible an item needs to contain all of the words that you typed but not necessarily in that order</li>
+<li>Any (new) – again we’re searching by words but any item that contains at least one of the words you type will be show in the filter</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>I remembered picking up some Wasabi Pills hair 2-3 months ago and picking the Ombre pack so combining “ombre” &gt;and&lt; “Wasabi” (so an “All” search) instantly gave me what I needed</li>
+</ul>
+<p><img alt="InvFilterAll" src="InvFilterAll.png" />!</p>
+<ul>
+<li>I needed to find a gacha kitty headband I got months ago. Good luck! So I searched my inventory for all occurrences of “band”, “head” &gt;or&lt; “hair” (so an “Any” search) and after a lot of scrolling I got it</li>
+</ul>
+<p><img alt="InvFilterAny" src="InvFilterAny.png" /></p>
+<p>Play around with these a little bit and you’ll see that they’re extremely useful tools to let you find that specific item you’re looking for that would have otherwise been much harder to locate. Once you’re familiar with the “Exact”, “All” and “Any” concept pay attention to the shorthand code that’s appearing in the main inventory floater as well. You don’t need to actually specify a search type on the filter floater, you can simply prefix your regular search words with “any:” and “all:” as well.</p>
+<p>Finally, since it was a special request it’s also possible to search your inventory using regular expressions (don’t worry if you don’t know what this means!):</p>
+<p><img alt="InvFilterRgx" src="InvFilterRgx.png" /></p>
+<h3 id="show-contents-in">Show Contents In</h3>
+<p>Often you'll be searching for something and either only the folder containing the items shows up, or only one of the items shows up. In that case, you can either right-click the item and go "Open in window", or cancel the current search and find the folder back but both of those are clunky and feel annoying.</p>
+<p>With this feature you'll be able to right-click the folder and pick "Show Contents In / Current Search" which will make all the items in that folder visible regardless of whether they match the current search words or not.</p>
+<p><img alt="InvShowInSearch" src="InvShowInSearch.png" /></p>
+<h3 id="mark-as-protectedsystem-folders">Mark as protected/system folders</h3>
+<p>If you right-click one of your own folders you’ll have a new option to treat it as if It was a <abbr title="Special inventory folders that can't be moved inside of other folders or deleted.">system folder</abbr>: this means that it sorts at the top with the other system folders if you have “Sort System Folders to Top” checked and it will also prevent you from accidentally deleting it.</p>
+<p>This doesn’t actually mess with your inventory but is rather a local setting; if you use multiple computers then you’ll have to do it for each once (I’m working on that!), and it won’t apply to any other viewers.</p>
+<p><img alt="InvSystemFolder" src="InvSystemFolder.png" /></p>
+<h3 id="folder-context-menu-enhancements">Folder context menu enhancements</h3>
+<p>As you might be able to spot from the screenshot above I did some minor layout changes to the inventory context menu; with the new inventory options and <abbr title="Linden Lab™">LL</abbr>’s new “Use as default” it felt like the menu was getting rather bloated; so in order to keep it manageable I decided to fold all inventory creation options into the “New Items” sub menu.</p>
+<p>If you have any thoughts to share (good or bad) please do use the feedback option in the viewer; for things like this the only way I know whether a change worked out for the best or not is if you all tell me 😊.</p>
+<h3 id="take-replace-links">Take (Replace Links)</h3>
+<p>Firestorm added a convenient “Replace Links” feature which was then contributed back to Linden Lab and is present in R12 as well (you can read more about this on <abbr title="Linden Lab™">LL</abbr>’s blog or Inara’s blog posts).</p>
+<p>As an extra convenience I added a “Take (Replace Links)” option to the context menu of a rezzed <abbr title="A collection of one or more linked prims or mesh.">object</abbr> which will take the item into inventory and pre-fill the replace links floater.</p>
+<p>(Note that the option will only show if the rezzed <abbr title="A collection of one or more linked prims or mesh.">object</abbr> has links pointing to it in your inventory)</p>
+<p><img alt="TakeReplace" src="TakeReplace.png" /></p>
+<h2 id="quick-preferences">Quick preferences</h2>
+<h3 id="main">Main</h3>
+<p>Catznip’s version of “quick preferences” was added in R11; R12 adds some minor functionality and enables the mysterious “quick inventory” tab.</p>
+<p><img alt="QuickPrefs" src="QuickPrefs.png" />
+<img alt="QuickPrefsWearing" src="QuickPrefsWearing.png" /></p>
+<p>Minor improvements:</p>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-278">CATZ-278</a> - The 'Quick Preferences' floater should be collapsible</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-293">CATZ-293</a> - Add "Quick Preferences" to the main (Me) menu
+The keyboard shortcut is Ctrl-Shift-P (the conflicting shortcut of 'Print Selected Object Info' was changed to Alt-Shift-P)</li>
+<li>Remember and restore the last active quick preferences tab</li>
+<li>Added a button for <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> rendering exceptions to the "Quick Preferences" floater</li>
+<li>Added a sorting menu to the wearing quick preferences tab</li>
+</ul>
+<p>Bug fixes:</p>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-295">CATZ-295</a> - 'Render Attached Lights' check box on the quick preferences panel doesn't turn off lights immediately</li>
+</ul>
+<h3 id="quick-inventory">Quick inventory</h3>
+<p>We all keep several HUDs attached in order to get to them quickly if we need to (i.e. <abbr title="A type of model created in an external application (such as Maya, 3DS Max, or Blender).">mesh</abbr> body/head <abbr title="Heads Up Display">HUD</abbr>, or a hugger/dance/posing <abbr title="Heads Up Display">HUD</abbr>) or worse, things we only need ever so often and if you’re like me, you’ll hate hunting them down in inventory because it feels clumsy and interrupt getting dressed.</p>
+<p>The quick inventory panel is my first attempt at a way to define things you want to have quick access to:</p>
+<p><img alt="QuickPrefsInventory" src="QuickPrefsInventory.png" /></p>
+<p>First you create a folder anywhere in your inventory, named anything you like (you might even already have such a folder at the ready) and fill it with links (or copies) to items you frequently need or, as you can tell from my example, you can put links to any existing outfits you might have.</p>
+<p>Once the folder is set up, click the button on the quick inventory tab and you’ll get the floater that lets you navigate to the folder you just created. Additionally, there’s a mini search bar to help you filter down.</p>
+<p>I’m sure that as I, and all of you, use this we’ll find more uses for it or things that can be refined or added so if you have any ideas or suggestions, please use the feedback button in the viewer 😊.</p>
+<h2 id="chat">Chat</h2>
+<h3 id="group-snoozing">Group snoozing</h3>
+<p>“Group snoozing” first appeared in Catznip 5 years ago (and has since been picked up by Firestorm and other TPVs) but it was only ever available through the group <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr>’s context menu so it wasn’t very discoverable (or configurable aside from the debug setting).</p>
+<p>R12 adds a per-group option to always snooze group chat when you hit the little x to close group chat, and a way to configure that specific group’s snooze time-out; the “next occurrence” option simply closes the group chat session until the next time someone says something (whether it’s 5 seconds after you close it, or 5 hours) which can be useful if you run a support group for instance.</p>
+<p>To configure, go to Communicate / Groups – right-click the group you wish the change the option for and pick “View Info”. The option will be 2/3rd of the way down:</p>
+<p><img alt="GroupSnooze" src="GroupSnooze.png" /></p>
+<p>Additionally if you already have group chat open, you can always right-click the group’s <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> and pick “Group Info” from there to get to the groups properties/profile floater or to snooze the group chat (using the default set).</p>
+<p><img alt="GroupChiclet" src="GroupChiclet.png" /></p>
+<p>Finally, you’re also able to manually snooze group chat using the new chat toolbar icon; if you configured closing group chat to always snooze then you can for instance pick “Until relog” to not see group chat until you relog (or until manually reopen it).</p>
+<p><img alt="GroupSnoozeFlyout" src="GroupSnoozeFlyout.png" /></p>
+<h3 id="only-join-conferences-started-by-friends">Only join conferences started by friends</h3>
+<p>There’s recently been some griefing that involves joining busy groups only to then start mass-conferences with group members; this option will only accept conference conversations that were started by someone on your friends list. If a conference is blocked you’ll briefly see a toast and a message will be logged to nearby chat.</p>
+<p>Additionally, I also provided an option to auto-ignore all group voice calls (note that this doesn’t block voice conferences from friends or non-friends).</p>
+<p><img alt="PrefConferences" src="PrefConferences.png" /></p>
+<h3 id="chat-history">Chat History</h3>
+<p><abbr title="Linden Lab™">LL</abbr> added the chat history a couple of years back but it – at least to me – never ended up feeling like it could replace hunting for the log folder and then opening the chat log in Notepad to search for what I wanted. In R12 it got a bit of a polish and three new functionalities were added to hopefully start making it more usable/friendly:</p>
+<p><img alt="ChatHistory" src="ChatHistory.png" />
+<img alt="ChatHistoryFilter" src="ChatHistoryFilter.png" /></p>
+<ul>
+<li>The drop down allows you to filter the chat history down to a specific year (or month)</li>
+<li>The search box will search through the chat history for the specified word/sentence. Note that when you open the chat history it opens the last page by default so if you search for something you’ll need to click the back button to search back in time.</li>
+<li>The text file icon will, when clicked, open the chat log in your standard text editor (e.g. Notepad)</li>
+</ul>
+<p>The following bugs relating to the chat history were also fixed:</p>
+<ul>
+<li>Viewing the chat history of someone who isn't in conversations.log opens an empty history when legacy names are enabled</li>
+<li>The "chat history" floater always starts on page 0</li>
+<li>The "chat history" floater doesn't remember its last position and/or size</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-341">CATZ-341</a> - Disabling "UseLegacyIMLogNames" doesn't use the same chat log names as the <abbr title="Linden Lab™">LL</abbr> viewer</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-360">CATZ-360</a> - Added missing “chat history” button to the nearby chat toolbar</li>
+</ul>
+<h2 id="magnifying-glass-on-avatar-profile-pictures">Magnifying glass on <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> profile picture(s)</h2>
+<p>When you hover over a profile <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> on the (legacy) profile floater, About Land, a group’s profile, … your cursor will show the zoom option which will open a <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> preview floater of that <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> (note that you do not have permission to save it to disk) with a fixed aspect ratio that matches the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> control’s.</p>
+<p><img alt="ZoomProfile" src="ZoomProfile.png" />
+<img alt="ZoomParcel" src="ZoomParcel.png" /></p>
+<h2 id="notifications-filtering">Notifications filtering</h2>
+<p>In R11 the notifications floater was revamped; in R12 there’s a new option for those of us who keep old notifications around but still want an easy way to see which notifications (group notices) are new. The “Since Logoff” option will (similarly to your inventory’s Recent tab) show only those notifications that were added since your last logoff (and any from the current logon session).</p>
+<p><img alt="NotifSinceLogoff" src="NotifSinceLogoff.png" /></p>
+<p>Additionally, every month the Luxe Box group is filled with people who don’t know how to get to a group’s notices so as a reminder there are 4 additional ways to easily get to the group notices in Catznip (does not apply to other viewers):</p>
+<ul>
+<li>From a group notice by clicking the group name (requested by a user and added in R12)</li>
+</ul>
+<p><img alt="GroupNotice" src="GroupNotice.png" /></p>
+<ul>
+<li>The envelope icon in the group chat tool bar</li>
+</ul>
+<p><img alt="ChatGroupToolbar" src="ChatGroupToolbar.png" /></p>
+<ul>
+<li>The “Group Notices” option in the group chat’s <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> right-click menu</li>
+</ul>
+<p><img alt="GroupChiclet" src="GroupChiclet.png" /></p>
+<ul>
+<li>The “View Notices” option in the right-click menu of the People / Groups tab</li>
+</ul>
+<p><img alt="GroupPeopleContextMenu" src="GroupPeopleContextMenu.png" /></p>
+<p>Additionally you’ll be able to instantly open the group’s profile by right-click the group’s name in the group notice, as well as the notice’s sender.
+Related bugfixes:</p>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-324">CATZ-324</a> - Notification close/delete button moves to the right when closing many notifications in a row</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-355">CATZ-355</a> - Group notifications in the notifications floater are shown in GMT</li>
+</ul>
+<h2 id="building">Building</h2>
+<h3 id="texture-flip">Texture flip</h3>
+<p>Another long-time request since <abbr title="Linden Lab™">LL</abbr> took this away; clicking the button will flip the horizontal/vertical scale (for diffuse, normal or specular depending on your current edit mode).</p>
+<p><img alt="BuildFlip" src="BuildFlip.png" /></p>
+<h3 id="hexhtml-color-value-support">Hex/HTML color value support</h3>
+<p>I was trying something with complementary colors and got annoyed that I had to keep converting from hex color value to RGB so there you go 😊.</p>
+<p><img alt="BuildHexColor" src="BuildHexColour.png" /></p>
+<h2 id="region-restart-floater-shaking">Region restart floater shaking</h2>
+<p>This was a long time request, sorry it took so long to get around to it but it’s finally here 😊.</p>
+<p><img alt="FloaterRestart" src="FloaterRestart.png" /></p>
+<p>Related bugfixes:</p>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-296">CATZ-296</a> - Region restart shows the wrong remaining time</li>
+<li>Region restart floater is missing its green/red background</li>
+</ul>
+<h2 id="increased-texture-memory">Increased <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory</h2>
+<p>With the move to 64-bit it’s finally possible to increase the viewer’s <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory allowance; since it seems <abbr title="Linden Lab™">LL</abbr> has already been working on this I’ve only done a minimal change. Since I don’t have access to a wide variety of video cards it’s possible you still may not be able to change it beyond the old 512Mb limit.</p>
+<p>Finally, keep in mind that your video card’s memory is shared between all currently running programs (i.e. browser tabs), so even though your card might have 2Gb or more of RAM the slider is conservatively capped at 1/3rd of total.</p>
+<p>Change it in Me / Preferences – Graphics tab and Advanced Graphics (a revamp of the graphics preferences is coming! I know the default is horrid ☹).</p>
+<p><img alt="PrefsTextMemory" src="PrefsTextMemory.png" /></p>
+<p>For those on the Windows 10 Fall Creator update you’ll have a very easy way to monitor your <abbr title="Graphics Processing Unit">GPU</abbr> memory usage by using the Task Manager:</p>
+<p><img alt="WinTaskManager" src="WinTaskManager.png" /></p>
+<p>(Note that the <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory slider has been excluded from graphics presets – see <a href="https://catznip.atlassian.net/browse/CATZ-351">CATZ-351</a>)</p>
+<h2 id="mouse-walking">Mouse walking</h2>
+<p>This has also been an on/off popular requested feature since it's apparently a big deal in WoW, and the standard way you move around that world. I’d really appreciate feedback on whether I got it right or wrong or if you have any suggestions for change.
+The following 2 changes were made:
+*When you hold down both the left and right mouse button on your own <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> you'll start walking forward for as long as at least both buttons are held down (so in order to stop walking you need to release at least one button). While you're walking you can move the mouse around to steer; this hasn't changed and was always the behavior when the left mouse button was down on yourself (or your own name tag).
+If you keep only the left mouse down then the camera will rotate along with your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr>; if you keep only the right button down then the camera will rotate around your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> which will keep facing the same way (it’ll make more sense when you try it 😊).</p>
+<p><img alt="MouseBoth" src="MouseBoth.png" /> Click your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> (or name tag) with both mouse buttons to start moving forward. Move the mouse to steer. Release both buttons to stop, or release one to allow camming (see below).</p>
+<p><img alt="MouseLeft" src="MouseLeft.png" /> When you let go of the right mouse button and keep holding down the left button you can orbit the camera and your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> will turn to <abbr title="One texturable side of a prim, or mesh.">face</abbr> the same direction.</p>
+<p><img alt="MouseRight" src="MouseRight.png" /> When you let go of the left mouse button and keep holding down the right button your camera will orbit but your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> will keep facing the same way.</p>
+<p><img alt="MouseBoth" src="MouseBoth.png" /> Pressing both buttons once more will move you forward once more.
+Note that you can switch between walking and running using the “Always Run” toggle [Ctrl-R].</p>
+<ul>
+<li>In WoW holding down the left mouse will orbit the camera around your character without changing its orientation while right-click holding will orbit and rotate your character as well. In Second Life the left-hold-orbit has already always rotated your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> around so I didn't want to touch that, secondly context menus are always supposed to open right after the mouse goes down so instead I had to use the middle mouse button to allow you to orbit around without actually turning that way.</li>
+</ul>
+<p>(Note that by default the middle mouse button is bound to “Talk” for <abbr title="Feature of the Viewer that enables you to speak to and hear other Residents.">voice chat</abbr> – if that hasn’t been changed this feature is disabled)</p>
+<p>While the middle mouse button is down the left and right mouse buttons will act as modifier keys:</p>
+<ul>
+<li>Middle mouse down: same as holding down the Alt key</li>
+<li>Left + middle mouse: same as holding down the Ctrl+Alt camera modifier</li>
+<li>Middle + right mouse: same as holding down the Ctrl+Alt+Shift camera modifier
+Try it out and provide feedback as needed 😊.</li>
+</ul>
+<h2 id="avatar-rendering-exceptions">Avatar rendering exceptions</h2>
+<p>When you right-click someone you (see screenshot) you have the option to always render that <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> regardless of your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> complexity settings (or never render them) but that preference didn’t persist and was lost on every relog.</p>
+<p>R12 incorporates the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> rendering list in the blocked/mute list floater (see screenshot) which you can get to from the normal places as well as the quick preferences appearance panel.</p>
+<p>Note that the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> rendering exception list is stored locally and per-viewer (requests to change this need to go through <abbr title="Linden Lab™">LL</abbr>’s <abbr title="Bug and issue tracking software">JIRA</abbr> unfortunately, it requires a minor server change to how the mute list is stored).</p>
+<p><img alt="DerenderAvContext" src="DerenderAvContext.png" />
+<img alt="DerenderAvFloater" src="DerenderAvFloater.png" />
+<img alt="DerenderAvQuickPrefs" src="DerenderAvQuickPrefs.png" /></p>
+<h2 id="rlva">RLVa</h2>
+<p>No new functionality but the following bugs were fixed:</p>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-301">CATZ-301</a> - Typing animation still starts when @redirectchat restricted</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-311">CATZ-311</a> - @stopim doesn't end the <abbr title="Instant Message">IM</abbr> session when @startim restricted</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-317">CATZ-317</a> - Texture tooltips should be blocked when @viewtexture=n restricted</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-319">CATZ-319</a> - Texture preview still available when @viewtexture=n</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-332">CATZ-332</a> - Crash saving a <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> to disk while @viewtextures=n restricted</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-350">CATZ-350</a> - Can't force ground sit while <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> is moving</li>
+<li>Chat animation isn't properly adjusted when @chatwhisper/normal/shout restricted</li>
+<li>@camdist[min|max] and @camunlock aren't enforced when using a scripted camera</li>
+</ul>
+<h2 id="various-minor-improvements">Various minor improvements</h2>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-297">CATZ-297</a> - Add Strawberry Singh's 'Light Up My SLife' and 'Headshots' Windlight sky presets</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-312">CATZ-312</a> - Add an item for the Recent tab to the 'Communicate' menu</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-373">CATZ-373</a> - Add Block / Unblock to the agent <abbr title="Second Life URL, that identifies a location inworld">SLURL</abbr> context menu (right-click their name in chat/<abbr title="Instant Message">IM</abbr>/groups)</li>
+</ul>
+<h2 id="various-other-bugfixes">Various other bugfixes</h2>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-277">CATZ-277</a> - Teleports no longer log to nearby chat</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-281">CATZ-281</a> - Double-clicking the group list scrollbar starts a group chat session</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-287">CATZ-287</a> - Place inspector no longer appears on the world map</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-289">CATZ-289</a> - Eject / Ban options are missing on the group chat context menu</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-292">CATZ-292</a> - (Re)set "reapply current Windlight settings at logon” as the default</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-303">CATZ-303</a> - Group moderators not sorted to the top of the list in group chat</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-304">CATZ-304</a> - Double-clicking names in the group chat list does nothing</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-306">CATZ-306</a> - Hotspot to drag and drop attachments to notices is misplaced</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-313">CATZ-313</a> - Closing the 'Replace links' floater crashes the viewer if a replace is in progress</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-337">CATZ-337</a> - '<abbr title="User Interface">UI</abbr> Size' can't easily be reset to 1.0</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-364">CATZ-364</a> - Render quality in the 'About' floater appears to be zero-based</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-4">CRASH-4</a> - Crash when closing a chat conference through the <abbr title="Instant Message">IM</abbr> well floater (or right-clicking the <abbr title="Instant Message">IM</abbr> well button / Close All)</li>
+<li>'DeleteItems' notification can’t be permanently ignored</li>
+<li>Can't eject a member in a group role from the participant context menu</li>
+<li>Clicking between the world and the inventory floater freezes the viewer</li>
+<li>Show eject/ban confirmation request and enable the context menu option for both single and multiple selections</li>
+<li>Crash when opening the wearing panel right after switching outfits</li>
+<li>Crash when opening the legacy profile floater with no <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr></li>
+<li>Incoming IMs and nearby chat messages freeze the viewer</li>
+<li>Searching a text editor backwards breaks when mSelectionEnd &lt; mSelectionStart</li>
+<li>Show the appropriate folder icon for folder links in inventory list controls</li>
+</ul>
+<h2 id="new-website-backend">New website + backend</h2>
+<p>Last, but certainly not least there's also been a lot of work done on a new Catznip website, as well as completely redoing the way the updater and crash reporter work. We'll be slowly unveiling this over the course of the year but for now you there's at least the new download page @ <a href="https://get.catznip.com">https://get.catznip.com</a>!</p>
+<p><img alt="GetCatznipCom" src="GetCatznipCom.png" /></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../r12_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Catznip R12.1" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Catznip R12.1
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../r11/" class="md-footer__link md-footer__link--next" aria-label="Next: Catznip R11" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Catznip R11
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+    
+  </body>
+</html>

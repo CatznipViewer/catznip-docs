@@ -1,0 +1,1537 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
+    
+    
+      
+        <title>Catznip R13 - Catznip Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="none" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catznip-r13" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-header__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Catznip Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Catznip R13
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/block_list/" class="md-tabs__link">
+        Catznip Features
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how_to/avatar/" class="md-tabs__link">
+        How To
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../rlva/allinone/" class="md-tabs__link">
+        RLVa
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../r14/" class="md-tabs__link md-tabs__link--active">
+        Release Notes
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        Contact
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Catznip Viewer Documentation" class="md-nav__button md-logo" aria-label="Catznip Viewer Documentation" data-md-component="logo">
+      
+  <img src="../../assets/Logo-NoText.png" alt="logo">
+
+    </a>
+    Catznip Viewer Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Catznip Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Catznip Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Catznip Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/block_list/" class="md-nav__link">
+        Block List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/crash_reporting/" class="md-nav__link">
+        Crash Reporting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/derender_objects/" class="md-nav__link">
+        Derender Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/inventory/" class="md-nav__link">
+        Inventory Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/mini_map/" class="md-nav__link">
+        Mini Map Parcels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/restore_to_last/" class="md-nav__link">
+        Restore to Last Position
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/script_recovery/" class="md-nav__link">
+        Script Recovery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/shared_wear/" class="md-nav__link">
+        Shared Wear
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/spell_checker/" class="md-nav__link">
+        Spell Checker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/usability_enchancements/" class="md-nav__link">
+        Usability Enhancements
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          How To
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How To" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          How To
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/avatar/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how_to/clean_install/" class="md-nav__link">
+        Clean Install The Viewer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          RLVa
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="RLVa" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          RLVa
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/allinone/" class="md-nav__link">
+        Full RLVa Command List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/avatar_commands/" class="md-nav__link">
+        Avatar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/camera_commands/" class="md-nav__link">
+        Camera
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/clothing_and_attachment_commands/" class="md-nav__link">
+        Clothing & Attachments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rlva/communication_commands/" class="md-nav__link">
+        Communications
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Release Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r14/" class="md-nav__link">
+        <span>Catznip R14  <span class="label-beta">(Beta)</span></span>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_2/" class="md-nav__link">
+        Catznip R13.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r13_1/" class="md-nav__link">
+        Catznip R13.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Catznip R13
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Catznip R13
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mac-version" class="md-nav__link">
+    Mac version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-presets" class="md-nav__link">
+    Camera presets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eep-windlight-improvements" class="md-nav__link">
+    EEP / Windlight improvements
+  </a>
+  
+    <nav class="md-nav" aria-label="EEP / Windlight improvements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-preferences" class="md-nav__link">
+    Quick Preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-windlight-setting-indicator" class="md-nav__link">
+    Active (Windlight) setting indicator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-library-assets" class="md-nav__link">
+    Edit library assets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floater-cleanup" class="md-nav__link">
+    Floater cleanup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    Improvements
+  </a>
+  
+    <nav class="md-nav" aria-label="Improvements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beacons" class="md-nav__link">
+    Beacons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-notice" class="md-nav__link">
+    Group notice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#places-search" class="md-nav__link">
+    Places search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolution-scale" class="md-nav__link">
+    Resolution scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-improvements" class="md-nav__link">
+    Minor improvements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugfixes" class="md-nav__link">
+    Bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crash-fixes" class="md-nav__link">
+    Crash fixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva" class="md-nav__link">
+    RLVa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_4/" class="md-nav__link">
+        Catznip R12.4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_3/" class="md-nav__link">
+        Catznip R12.3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_2/" class="md-nav__link">
+        Catznip R12.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12_1/" class="md-nav__link">
+        Catznip R12.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r12/" class="md-nav__link">
+        Catznip R12
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r11/" class="md-nav__link">
+        Catznip R11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r10/" class="md-nav__link">
+        Catznip R10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r09/" class="md-nav__link">
+        Catznip R9
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08_1/" class="md-nav__link">
+        Catznip R8.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r08/" class="md-nav__link">
+        Catznip R8
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r07/" class="md-nav__link">
+        Catznip R7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r06/" class="md-nav__link">
+        Catznip R6
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r05/" class="md-nav__link">
+        Catznip R5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r04/" class="md-nav__link">
+        Catznip R3 & R4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Contact
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Contact" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Contact
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/credits/" class="md-nav__link">
+        Catznip Team
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/privacy_policy/" class="md-nav__link">
+        Privacy policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mac-version" class="md-nav__link">
+    Mac version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camera-presets" class="md-nav__link">
+    Camera presets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eep-windlight-improvements" class="md-nav__link">
+    EEP / Windlight improvements
+  </a>
+  
+    <nav class="md-nav" aria-label="EEP / Windlight improvements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-preferences" class="md-nav__link">
+    Quick Preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-windlight-setting-indicator" class="md-nav__link">
+    Active (Windlight) setting indicator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-library-assets" class="md-nav__link">
+    Edit library assets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#floater-cleanup" class="md-nav__link">
+    Floater cleanup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    Improvements
+  </a>
+  
+    <nav class="md-nav" aria-label="Improvements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beacons" class="md-nav__link">
+    Beacons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-notice" class="md-nav__link">
+    Group notice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#places-search" class="md-nav__link">
+    Places search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolution-scale" class="md-nav__link">
+    Resolution scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor-improvements" class="md-nav__link">
+    Minor improvements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugfixes" class="md-nav__link">
+    Bugfixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crash-fixes" class="md-nav__link">
+    Crash fixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rlva" class="md-nav__link">
+    RLVa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="catznip-r13">Catznip R13</h1>
+<video class="video-item" autoplay="" loop="" muted="">
+    <source src="Catznip-R13.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<p>It's definitely been a very long road to get to this point but we've finally broken the curse and R13 is here in time for the new year!</p>
+<p>If you're reading this you'll notice we have a brand new release notes page and we've been working behind the scenes for many other improvements to streamline releases.</p>
+<p>We're getting close to being able to bring you much faster updates and new features than we've been delivering over the past year and you'll hear more about that very soon (keep an eye out on group notices!).</p>
+<h2 id="mac-version">Mac version</h2>
+<p><img alt="MacInstaller" src="MacInstaller.png" /></p>
+<p>Thanks to a hardware donation (you know who you are! ♡) we have a working Mac again to test and develop on!</p>
+<p>The beta feedback has been largely positive but new Mac users should expect some rough edges; please do let us know about any problems you run into through the "Feedback" button at the top of the screen (next to your L$ balance).</p>
+<p>We already know we have the <strong>best</strong> installer out of all Second Life viewers, obviously...</p>
+<h2 id="camera-presets">Camera presets</h2>
+<p>The viewer has had the ability to let you change between 3 fixed camera presets for a while now; or even to set a custom camera viewpoint for those who wanted to delve into the debug settings. With the camera presets feature Linden Lab made it all a lot more accessible to everyone, even if it did come with quite horrible <abbr title="User Interface">UI</abbr> (it doubled in width – see below).</p>
+<p>From experience we know that people prefer a very minimal camera floater, so I did my best to keep things as tight as possible while still making the new feature easily accessible to everyone.</p>
+<p><img alt="CameraFloaterLLvsCatznip" src="CameraFloaterLLvsCatznip.png" /></p>
+<p>You can read more about the feature and how to use it in Inara’s tutorial @ <a href="https://modemworld.me/2020/05/19/tutorial-viewer-camera-presets/">https://modemworld.me/2020/05/19/tutorial-viewer-camera-presets/</a> . Do keep in mind she is referencing the official viewer’s user interface, but everything should be clear enough to find your way around in Catznip if you keep on reading below 😊.</p>
+<p>In integrating the feature we also came up with a few innovations of our own. For instance, you might have noticed there are now two sliders in between the orbit and pan controls:</p>
+<ul>
+<li>The left slider controls the camera zoom as it previously did (=using the scroll wheel on your mouse). When focused on an <abbr title="A collection of one or more linked prims or mesh.">object</abbr> we’ve also slightly tweaked the slider values so you’ll have more control when the camera is closer to the <abbr title="A collection of one or more linked prims or mesh.">object</abbr> rather than instantly fly off into the distance.</li>
+<li>The right slider controls the field of view (= Ctrl-8 / Ctrl-0) which is more commonly used to ‘zoom’ in tight to an <abbr title="An object (for example: clothing, weapons, jewelry, or shoes) that can be attached to an avatar at a specific location.">attachment</abbr> for editing.</li>
+</ul>
+<p>Additionally, both will now snap back to their default when resetting the camera (by hitting Esc). If you do want a different FoV you can change the default and then save your camera preset (see below) and it will always snap back to your desired value on reset.</p>
+<p>The dropdown lets you choose from your available presets and we have included the popular Penny Patton ones in the viewer by default. Pressing the gear icon will open the presets floater which is significantly different from the official viewer’s (which confusingly has 3 separate floaters to do the same thing).</p>
+<p><img alt="CameraPresets" src="CameraPresets.png" /></p>
+<p>On the left side you will see all presets. Clicking one will show you its detailed values on the right. The ‘Refresh’ icon will only show on presets that are included in the viewer by default and allow you reset them back in case you’ve made changes to them that you’re not at all happy with.</p>
+<p>To create a new preset, simply click the New button at the bottom right. To save your changes click Save; or click the down arrow to save your current values as an entirely new (custom) preset.</p>
+<p>You can immediately jump into changing the values; however you also have the option to pick ‘Sync with camera’ and move your camera into a rough starting position. Then uncheck the option when you have positioned it where you want it and tweak the values slightly to your liking before saving.</p>
+<p>To delete one of your own custom presets, hover over it on the left side and click the trash icon that appears.</p>
+<p><img alt="CameraPresetsDelete" src="CameraPresetsDelete.png" /></p>
+<p>Finally: remember that Catznip has a transparency slider specifically for the Camera and Move floaters at the Me menu / Preferences / Colors tab. If you are one of the people who always keeps (one of) those floaters on screen, setting a low opacity will leave it accessible but not obscure part of the world.</p>
+<p><img alt="CameraFloaterTransparency" src="CameraFloaterTransparency.png" /></p>
+<h2 id="eep-windlight-improvements"><abbr title="Environment Enhancement Project">EEP</abbr> / Windlight improvements</h2>
+<h3 id="quick-preferences">Quick Preferences</h3>
+<p>The panel went through a complete redesign and we would really love your feedback on it (especially if there's something you want quick access to that we forgot!)</p>
+<p><img alt="QuickPrefsWindlight" src="QuickPrefsWindlight.png" /></p>
+<p>'Use Shared Environment' is the same as the World / Environment / Use Shared Environment menu option.</p>
+<p>'Personal Lighting...' will open the personal lighting floater (which we haven't changed - yet).</p>
+<p>The ❮ [left] and ❯ [right] buttons cycles you through the available options</p>
+<p>The wrench button immediately opens the 'Edit Environment' floater allowing you to make one-time changes or to save (a copy of) your changes.</p>
+<p>'Reapply current Windlight at logon' is the same as before and will keep your Windlight settings consistent across relogs when checked. When unchecked you will always default to the 'shared' environment.</p>
+<p>'Interpolate preset changes' will transition you from one setting to the next over 5 seconds when checked; or will change instantly between settings when unchecked.</p>
+<p>Since Windlight settings can now be present in your own inventory as well as the default library settings we've made it clearer in the dropdowns to see where a setting your picking is located in your inventory</p>
+<p><img alt="QuickPrefsWindlightDropdown" src="QuickPrefsWindlightDropdown.png" /></p>
+<h3 id="active-windlight-setting-indicator">Active (Windlight) setting indicator</h3>
+<p>When a Windlight (day/sky/water) setting is currently active you'll now see an 'active' indicator behind it in My Environments and the inventory floater.</p>
+<p><img alt="InventoryWindlightActive" src="InventoryWindlightActive.png" /></p>
+<h3 id="edit-library-assets">Edit library assets</h3>
+<p>Normally, if you want to make small changes to a stock/library Windlight setting you'd first have to copy that item into your own inventory and then open it to make edits.
+This quality of life improvement allows you to open Windlight settings straight from the library (right-click inventory / Open) and then make your changes.
+When it's time to save, click the 'Save As' button which will save the new environment in your 'Settings' folder.
+(Remember that you can also pick 'Apply Only To Myself' to make temporary one-time changes without needing to clutter your inventory with unnecessary settings items).</p>
+<h3 id="floater-cleanup">Floater cleanup</h3>
+<p>Most of the Windlight floaters were cleaned up to make them take up less of your screen without feeling too cramped.</p>
+<h2 id="improvements">Improvements</h2>
+<h3 id="beacons">Beacons</h3>
+<p>I have added an option to control the height of the beacons which is particularly useful if you are trying to find the one scripted <abbr title="A collection of one or more linked prims or mesh.">object</abbr> in a sea of red lines that stretch to infinity.</p>
+<p>Using a height value of 4 for instance will give you a lot more spatial detail on where each beacon is located and marks tracking down an <abbr title="A collection of one or more linked prims or mesh.">object</abbr> so much easier.</p>
+<p>I have also added an option specifically to highlight light sources which can be useful if you’re trying to set up a picture or any situation where you might have an unwanted light source that isn’t immediately obvious.</p>
+<p><img alt="BuildBeacons" src="BuildBeacons.png" /></p>
+<h3 id="group-notice">Group notice</h3>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-530">CATZ-530</a> - Show 'remaining characters' on the group notice floater</li>
+</ul>
+<p><img alt="GroupNewNotice" src="GroupNewNotice.png" /></p>
+<h3 id="places-search">Places search</h3>
+<ul>
+<li>Pressing ⏎ [enter] on the text editor will run the search</li>
+<li>Pressing ⬇ [down] afterwards will jump to the first result (where you can then use the arrow keys to navigate between them)</li>
+<li>Pressing ⏎ [enter] on a search result will <abbr title="To instantly change your location inworld.">teleport</abbr> you to that location</li>
+<li>Clicking the search button manually will also set focus to the first result</li>
+<li>Double-clicking a search result will <abbr title="To instantly change your location inworld.">teleport</abbr> you to that location</li>
+</ul>
+<p><img alt="SearchPlaces" src="SearchPlaces.png" /></p>
+<h3 id="resolution-scale">Resolution scale</h3>
+<p>If you're really struggling with your <abbr title="Frames Per Second">FPS</abbr> then you can give the new resolution scale slider a try (it's under Me / Preferences / Graphics / Advanced).
+At 100% (all the way to the right) everything looks at normal; at 50% (all the way to the left) the viewer will render at half the normal resolution leaving you with a blockier view but hopefully a more manageable <abbr title="Frames Per Second">FPS</abbr> (or allow you to enable Windlight / <abbr title="Advanced Lighting Model">ALM</abbr> where you otherwise couldn't).
+Play around with the setting - we've found there's definitely a sweet spot but it's different for each specific computer configuration.</p>
+<p><img alt="GraphicsResolutionScale" src="GraphicsResolutionScale.png" /></p>
+<h3 id="minor-improvements">Minor improvements</h3>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-547">CATZ-547</a> - Option to turn off extra lighting that is applied when editing appearance</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-557">CATZ-557</a> - Improve initial opening time for the landmarks floater (+ improved filtering performance)</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-584">CATZ-584</a> - Give visual feedback when using an invalid regex for an inventory search
+<img alt="InventoryRgxSearch" src="InventoryRgxSearch.png" /></li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-593">CATZ-593</a> - Add option to sort Nearby and Friends list by <abbr title="The unique identifier you use to log into Second Life.">username</abbr> (cause nagging pony)</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-594">CATZ-594</a> - Opening the feedback floater should give focus to the feedback form</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-597">CATZ-597</a>: Add link to Discord server and clean up social media links</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-601">CATZ-601</a> - Increase default and minimal <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> cache size</li>
+<li>Add a button to open the 'Camera Presets' to preferences and remove the settings that are now part of the presets floater (namely camera focus offset and field of vision)</li>
+<li>Increase the maximum allowable <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory limit from 33% to 50% of total</li>
+<li>Show the default value on slider controls (no snap to default but rather it's a bit 'sticky' once reached)</li>
+<li>Embed a no manifest copy of the viewer executable in the installer to cater to legacy Intel video cards with drives that won't run on Win10</li>
+</ul>
+<h2 id="bugfixes">Bugfixes</h2>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-222">CATZ-222</a> - Restoring a derendered <abbr title="A collection of one or more linked prims or mesh.">object</abbr> does not immediately make it visible again (it required a <abbr title="To instantly change your location inworld.">teleport</abbr> away and back)</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-274">CATZ-274</a> - Unchecking 'Turn Towards Selection' still turns the <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> towards a selected <abbr title="A collection of one or more linked prims or mesh.">object</abbr></li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-321">CATZ-321</a> - Toggling "Arm Points Towards Selection" does update your <abbr title="Representation of a Resident or bot in the Second Life virtual world.">avatar</abbr> if you currently have an <abbr title="A collection of one or more linked prims or mesh.">object</abbr> selected<ul>
+<li>Reminder: you can toggle this and ‘Turn Towards Selection’ from the Build / Options submenu (or by clicking the arrow next to ‘Selection Options’ when the builder floater is open).</li>
+</ul>
+</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-353">CATZ-353</a> - Script color changes aren't applied to existing <abbr title="Executable objects written in LSL that can affect how objects look, move, interact with avatars, and communicate.">script</abbr> floaters</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-521">CATZ-521</a> - 'Hide All Controls' should hide the <abbr title="Row of icons representing open chat or group conversations.">chiclet</abbr> bar</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-528">CATZ-528</a> - Help / About - Release Notes link does not work</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-543">CATZ-543</a> - Object name is only partially visible on the 'Pay' floater</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-549">CATZ-549</a> - Can't reposition some HUDs using the edit floater (manual entry or using the X/Y/Z spinners)<ul>
+<li>For instance the Maitreya <abbr title="Heads Up Display">HUD</abbr> needs negative values to move it closer to the top left of the screen</li>
+</ul>
+</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-578">CATZ-578</a> - Worn items are moved into Lost-and-Found at log off for some users</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-580">CATZ-580</a> - Delete button overhang on the picks floats</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-591">CATZ-591</a> - 'Browse' button on the Preferences Snapshots tab is in the wrong position</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-592">CATZ-592</a> - Triple-clicking static text will select it (e.g. the top location bar)</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-595">CATZ-595</a> - 'Show Permissions' sub-menu on the Friends list doesn't show currently selected option</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-596">CATZ-596</a> - Bubble chat text flickers for some avatars</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-599">CATZ-599</a> - Viewer doesn't auto-login to web profiles, search and marketplace in internal browser</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-603">CATZ-603</a> - Maximum <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory on cards with &lt;1.5Gb of <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> memory is lower than 512Mb</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-610">CATZ-610</a> - Text overlaps in Preferences / Move &amp; View</li>
+<li>Removing a stored user credential does not clear their stored favorites</li>
+</ul>
+<h2 id="crash-fixes">Crash fixes</h2>
+<ul>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-584">CATZ-584</a> - Crash when using regex inventory search</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-34">CRASH-34</a> - LLTextureCache::writeToFastCache(...)</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-35">CRASH-35</a> - LLMeshCostData::init()</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-36">CRASH-36</a> - LLDrawPoolAvatar::renderRigged()</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-37">CRASH-37</a> - Crash when accepting an inventory offer while a fetch is pending</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-38">CRASH-38</a> - Crash when closing a <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> preview before save completes</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-39">CRASH-39</a> - Crash when applying a <abbr title="An image that can be applied to the faces of a prim to give the appearance of a material.">texture</abbr> a prim</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-40">CRASH-40</a> - Crash when creating a new folder under Settings with the QuickPrefs Windlight panel open</li>
+<li><a href="https://catznip.atlassian.net/browse/CRASH-41">CRASH-41</a> - Crash when touching a non-existent <abbr title="A collection of one or more linked prims or mesh.">object</abbr></li>
+</ul>
+<h2 id="rlva">RLVa</h2>
+<ul>
+<li>See RLVa 2.3 release notes</li>
+<li>See RLVa 2.4 release notes</li>
+<li>See @setsphere</li>
+<li>Add @getdebug_aspectratio to return the viewer window's AR (helper for @setoverlay)</li>
+<li>Added @shownametags:&lt;distance&gt;</li>
+<li><a href="https://catznip.atlassian.net/browse/CATZ-586">CATZ-586</a> - Switch to an expandable input editor for the RLVa console</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../r13_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Catznip R13.1" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Catznip R13.1
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../r12_4/" class="md-footer__link md-footer__link--next" aria-label="Next: Catznip R12.4" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Catznip R12.4
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      
+    
+  </body>
+</html>

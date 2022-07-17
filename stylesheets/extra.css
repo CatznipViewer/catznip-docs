@@ -1,0 +1,52 @@
+:root {
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #282828;
+  --md-typeset-a-color: #B8B8B8;
+}
+
+/* BEGIN Beta label */
+.md-nav.md-nav--primary .md-nav__link span {
+	display: block;
+}
+.md-nav.md-nav--primary .md-nav__link span.label-beta {
+	display: inline-block;
+	font-variant: all-small-caps;
+	font-weight: bold;
+	vertical-align: super;
+}
+/* END Beta label */
+
+.md-typeset {
+	font-size: 15px;
+}
+
+.md-typeset h2 {
+	font-size: 30px;
+}
+
+.video-item {
+	position: relative;
+	width: 100%;
+}
+
+h1, h2 {
+	clear:both;
+}
+
+img[alt$=">"] {
+	float: right;
+}
+  
+img[alt$="<"] {
+	float: left;
+}
+  
+img[alt$="><"] {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	float: none!important;
+}
